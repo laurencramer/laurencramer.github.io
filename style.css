@@ -1,18 +1,17 @@
 
 html, body {
-  height: 100%;
+	height: 100%;
 	margin: 0px;
 
 }
 
 body {
 	padding: 0;
-	background: #f4f4f4;
 	color: #cdcdcd;
-	font-family: 'Open Sans', Sans-Serif;
 	font-size: 15px;
+	background: #f4f4f4;
+	font-family: 'Sawarabi Gothic', sans-serif;
 }
-
 
 .main {
 	height: 100%;
@@ -24,18 +23,25 @@ body {
 	background-color: #fff;
 }
 
-.navbar {
-	font-family: 'Open Sans', Sans-Serif;
-	font-size: 15px;
-}
 .nav-item {
-	padding: 0px 10px 0px 10px;
+	padding: 0px 5px 0px 5px;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+nav, .jumbotron {
+	display: block;
 }
+nav a {
+	color: #fff;
+}
+nav a:hover {
+	color: #9AB6F2;
+}
+
+nav {
+	font-size: 15px;
+	font-family: 'Sawarabi Gothic', sans-serif;
+	background-color: #497AE1;
+}
+
 .fa {
 	padding: 15px;
 	color: #f4f4f4;
@@ -45,23 +51,48 @@ body {
 	color: #f4f4f4;
 }
 
-.home-img {
-	padding: 5%;
-	display: inline;
-}
-.col-sm {
+.col-lg {
 	text-align: center;
 }
 .title {
-	font-size: 5em;
-	display: inline;
+	color: #fff;
+	font-size: 6em;
+	display: inline-block;
+	padding-top: 12%;
 	font-weight: 800;
-	text-align: left;
-	padding-top: 10%;
-	font-family: 'Work Sans', Sans-Serif;
-
+	text-align: center !important;
+	font-family: 'Signika', sans-serif;
 }
 
+.subtitle {
+	color: #fff;
+	font-size: 1.5em;
+	display: inline-block;
+	font-weight: 700;
+	padding-top: 2%;
+	padding-bottom: 18%;
+	text-align: center !important;
+	font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.section-header {
+	font-size: 2.5em;
+	display: block;
+	font-weight: 700;
+	padding-bottom: 2%;
+	text-align: center !important;
+	font-family: 'Signika', sans-serif; 
+}
+section {
+	padding: 0px 0px 20px 0px;
+}
+#about {
+	
+}
+#projects {
+	padding-top: 25px;
+	background-color: #FF943F;
+}
 .rounded-circle {
 	margin: 10px;
 }

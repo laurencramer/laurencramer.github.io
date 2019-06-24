@@ -7,7 +7,7 @@
   	<meta name="description" content="My portfolio">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic|Signika&display=swap" rel="stylesheet">
 	<title>Lauren Cramer</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,56 +15,75 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+	<nav class="navbar navbar-expand-lg text-lowercase fixed-top" id="mainNav">
+		<a class="navbar-brand js-scroll-trigger" href="#page-top" src="page-top">Lauren Cramer</a>
+		<button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fas fa-bars"></i>
 		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item mx-0 mx-lg-1">
+					<a class="nav-link py-2 px-0 px-lg-2 rounded js-scroll-trigger" href="#about">About</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="about.html">About Me</a>
+				<li class="nav-item mx-0 mx-lg-1">
+					<a class="nav-link py-2 px-0 px-lg-2 rounded js-scroll-trigger" href="#projects">Projects</a>
 				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Projects
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Cheqin</a>
-						<a class="dropdown-item" href="#">Connecc</a>
-						<a class="dropdown-item" href="#">TheatreNow</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">View all</a>
-					</div>
+				<li class="nav-item mx-0 mx-lg-1">
+					<a class="nav-link py-2 px-0 px-lg-2 rounded js-scroll-trigger" href="#contact">Contact</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="LaurenCramer-Resume.pdf" target="_blank">Resume</a>
+				<li class="nav-item mx-0 mx-lg-1">
+					<a class="nav-link py-2 px-0 px-lg-2 rounded js-scroll-trigger" href="">Resume</a>
 				</li>
 			</ul>
-			<a href="#" class="fab fa-linkedin-in"></a>
-			<a href="#" class="fab fa-github-alt"></a>
-			<a href="#" class="fa fa-at"></a>
 		</div>
 	</nav>
-	
-	<div class="main">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm home-img">
-				  <img src="images/laurencramer.jpg" class="rounded-circle">
-				</div>
-				
-				<div class="col-sm title">
-				  lauren cramer
-				</div>
-			  </div>
-			
+	<span id="page-top"></span>
+	<div class="jumbotron" style="background-color: #497AE1;">
+		
+    	<div class="col title align-self-center">
+			<span class="full">lauren cramer</span>
 		</div>
-	</div>
+		<br>
+		<div class="col subtitle align-self-center">
+			<span>UI Designer • UX Researcher • Cat Lover</span> 
+		</div>
+  	</div>
 	
+	<section id="about">
+		<h2 class="section-header">about me</h2>
+		<div class="row">
+			<div class="col-lg home-img">
+				<a href="https://imgplaceholder.com"><img src="https://imgplaceholder.com/420x320/51c4ab/ffffff/fa-male" alt="ImgPlaceholder"></a>
+			</div>
+
+			<div class="col-lg text-left align-self-center">
+				<p style="width: 80%;">
+				My name is Lauren, but almost everyone I know calls me Larn. I'm from Playa del Rey, California, where I currently reside. I moved back after recently graduating from the University of California, Irvine with a B.S. in Informatics with a specialization in Human-Computer Interaction. 
+				<br><br>	
+				I enjoy front-end developing, UI design, and UX research. 
+				<br><br>
+				Some of my hobbies include figure skating, video games, cosplaying, and hanging out with my two cats. 
+				<br><br>
+				In the future, I hope to pursue a Master's or Ph.D. in Data Science or Human-Computer Interaction. 
+				</p>
+			</div>
+		</div>
+	</section>
+	<section id="projects">
+		<h2 class="section-header">projects</h2>
+		<div class="row">
+			<div class="col-md">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Circle_-_black_simple.svg/500px-Circle_-_black_simple.svg.png" width="98%">
+			</div>
+			<div class="col-md">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Circle_-_black_simple.svg/500px-Circle_-_black_simple.svg.png" width="98%">
+			</div>
+			<div class="col-md">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Circle_-_black_simple.svg/500px-Circle_-_black_simple.svg.png" width="98%">
+			</div>
+		</div>
+	</section>	
+
 	
 	
 	
