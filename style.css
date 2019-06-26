@@ -84,15 +84,29 @@ nav {
 	font-family: 'Signika', sans-serif; 
 }
 section {
-	padding: 0px 0px 20px 0px;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	min-height: 600px;
 }
-#about {
+#about-section {
 	
 }
-#projects {
-	padding-top: 25px;
-	background-color: #FF943F;
+#projects-section {
+	background-color: #FFC597;
 }
-.rounded-circle {
-	margin: 10px;
+.project-icon {
+	padding: 25px;
+	height: 300px;
+	width: auto;
+}
+.card {
+	border-radius: 20px!important;
+}
+.card-body {
+	background-color: #F4F4F4;
+	border-radius: 0px 0px 20px 20px!important;
+}
+#bio {
+	width: 80%;
+	padding: 15px;
 }
