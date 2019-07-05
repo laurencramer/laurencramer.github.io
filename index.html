@@ -6,9 +6,10 @@
   	<meta name="author" content="Lauren Cramer">
   	<meta name="description" content="My portfolio">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	 <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic|Signika&display=swap" rel="stylesheet">
 	<title>Lauren Cramer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic|Signika&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -38,14 +39,14 @@
 		</div>
 	</nav>
 	<span id="page-top"></span>
-	<div class="jumbotron" style="background-color: #497AE1;">
+	<div class="jumbotron">
 		
     	<div class="col title align-self-center">
 			<span class="full">lauren cramer</span>
 		</div>
 		<br>
 		<div class="col subtitle align-self-center">
-			<span>UI Designer • UX Researcher • Cat Lover</span> 
+			<span>UI Designer • UX Researcher • Cat Lover • Bee Devotee</span> 
 		</div>
   	</div>
 	<span id="about"></span>
@@ -53,7 +54,7 @@
 		<h2 class="section-header">about me</h2>
 		<div class="row">
 			<div class="col-lg home-img">
-				<a href="https://imgplaceholder.com"><img src="https://imgplaceholder.com/420x320/51c4ab/ffffff/fa-male" alt="ImgPlaceholder"></a>
+				<a href="https://imgplaceholder.com"><img src="images/the-bees.jpg" height="350px" width="350px" style="border-radius: 20px;"></a>
 			</div>
 
 			<div class="col-lg text-left align-self-center">
@@ -79,7 +80,7 @@
 					<div class="card-body">
 						<h5 class="card-title">Cheqin</h5>
 						<p class="card-text">A mood tracking app that reduces the hassle and frustration of mood self-tracking and displays data beautifully to maximum that app's benefit. </p>
-						<a href="#" class="btn btn-primary">Learn More</a>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-cheqin-modal-lg">Learn More</button>
 					</div>
 				</div>
 			</div>
@@ -89,19 +90,113 @@
 					<div class="card-body">
 						<h5 class="card-title">Connecc</h5>
 						<p class="card-text">An app to help bridge the communication gap between patients and their mental health provider by taking your data an creating concise, readable summaries for your provider.</p>
-						<a href="#" class="btn btn-primary">Learn More</a>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-connecc-modal-lg">Learn More</button>
+						
 					</div>
 				</div>
 			</div>
 			<div class="col-md">
 				<div class="card mx-auto" style="width: 70%;">
-					<img src="images/tnl-logo.png" class="project-icon mx-auto d-block" alt="TheatreNow Logo" style="width: 80%;">
+					<img src="images/tnl-logo.png" class="project-icon mx-auto d-block" alt="TheatreNow Logo" style="width: 200px; height: 200px;">
 					<div class="card-body">
 						<h5 class="card-title">TheatreNow</h5>
 						<p class="card-text">An all-in-one website for owners, producers, and managers of smaller theatres to easily acquire rights to larger shows, access all show resources, and track revenue and set goals.</p>
-						<a href="#" class="btn btn-primary">Learn More</a>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Learn More</button>
 					</div>
 				</div>
+			</div>
+			
+			
+			
+			
+			<div class="modal fade bd-cheqin-modal-lg" tabindex="-1" role="dialog" aria-labelledby="ConneccModal" aria-hidden="true" keyboard="true">
+			  <div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="connecc">
+				  		<h1>Cheqin</h1>
+						<emphasis>UCI Project in Human-Computer Interaction - 10 weeks</emphasis>
+						<br><br>
+						Language and Software I Used:
+						<br>
+						<i class="devicon-illustrator-plain colored dev-icon"></i>
+						<i class="devicon-photoshop-plain colored dev-icon"></i>
+						<img src="images/invision.png" height="50px">
+						<br>
+						<img src="images/moqups.png" height="40px" width="auto">
+						<br><br>
+						<a href="https://laurencramer.wixsite.com/connecc" target="_blank">Go to project website</a>
+						<p><strong>Project Background:</strong> Coming soon!
+						</p>
+						<p>
+						<strong>Project Requirements:</strong> Coming Soon! 
+						</p>
+
+					</div>
+				</div>
+			  </div>
+			</div>
+			<div class="modal fade bd-connecc-modal-lg" tabindex="-1" role="dialog" aria-labelledby="ConneccModal" aria-hidden="true" keyboard="true">
+			  <div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="connecc">
+				  		<h1>Connecc</h1>
+						<emphasis>UCI Project in Health Informatics - 10 weeks</emphasis>
+						<br><br>
+						Language and Software I Used:
+						<br>
+						<i class="devicon-illustrator-plain colored dev-icon"></i>
+						<i class="devicon-photoshop-plain colored dev-icon"></i>
+						<br>
+						<img src="images/wixlogo.jpg" height="40px" width="auto">
+						<br><br>
+						<a href="https://laurencramer.wixsite.com/connecc" target="_blank">Go to project website</a>
+						<p><strong>Project Background:</strong> Coming soon!
+						</p>
+						<p>
+						<strong>Project Requirements:</strong> Coming Soon! 
+						</p>
+
+					</div>
+				</div>
+			  </div>
+			</div>
+			<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="TheatreNowModal" aria-hidden="true" keyboard="true">
+			  <div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="theatrenow">
+				  		<h1>TheatreNow</h1>
+						<emphasis>UCI Senior Capstone Project - 20 weeks</emphasis>
+						<br><br>
+						Language and Software I Used:
+						<br>
+						<i class="devicon-css3-plain-wordmark colored dev-icon"></i>
+						<i class="devicon-html5-plain-wordmark colored dev-icon"></i>
+						<i class="devicon-bootstrap-plain-wordmark colored dev-icon"></i>
+						<i class="devicon-javascript-plain colored dev-icon"></i>
+						<i class="devicon-illustrator-plain colored dev-icon"></i>
+						<i class="devicon-photoshop-plain colored dev-icon"></i>
+						<i class="devicon-github-plain-wordmark colored dev-icon"></i>
+						<br><br>
+						<p><strong>Project Background:</strong> For this project, our group was "sponsored" by a company called <a href="https://nycoc.org/" target="_blank">Apples and Oranges</a>. Apples and Oranges helps "starving" artists develop and bring their shows to life and also helps smaller theatres more effectively acquire rights to larger shows that they couldn't obtain or afford otherwise.
+						</p>
+						<p>
+						<strong>Project Requirements:</strong> Our task was to create a website for smaller theatre managers, owners, and producers. They wanted a simple, clean, intuitive website where theatre mananagement could apply for show rights, access all show resources, promote their shows, and track revenue.  
+						</p>
+						Our Solution: TheatreNow
+						<br>
+						<img src="images/TN-home.jpg" width="90%" alt="TheatreNow Home Screenshot" class="screenshots">
+						<br>
+						<img src="images/TN-emma.png" width="90%" alt="TheatreNow Show Screenshot" class="screenshots">
+						<br>
+						<img src="images/TN-social.png" width="90%" alt="TheatreNow Social Screenshot" class="screenshots">
+						<br>
+						<img src="images/TN-upload.png" width="90%" alt="TheatreNow Upload Stream Screenshot" class="screenshots">
+						<br>
+						<img src="images/TN-rev.png" width="90%" alt="TheatreNow Upload Stream Screenshot" class="screenshots">
+
+					</div>
+				</div>
+			  </div>
 			</div>
 		</div>
 	</section>	

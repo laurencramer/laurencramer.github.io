@@ -1,3 +1,9 @@
+:root {
+	--jumbo: #497AE1;
+	--accent-light: #AF9CF3;
+	
+}
+
 
 html, body {
 	height: 100%;
@@ -41,7 +47,9 @@ nav {
 	font-family: 'Sawarabi Gothic', sans-serif;
 	background-color: #497AE1;
 }
-
+.jumbotron {
+	background-color: var(--jumbo) !important;
+}
 .fa {
 	padding: 15px;
 	color: #f4f4f4;
@@ -92,12 +100,16 @@ section {
 	
 }
 #projects-section {
-	background-color: #FFC597;
+	background-color: var(--accent-light);
 }
 .project-icon {
 	padding: 25px;
-	height: 300px;
-	width: auto;
+	height: 230px;
+	width: 200px;
+}
+.dev-icon {
+	font-size: 50px;
+	display: inline !important;
 }
 .card {
 	border-radius: 20px!important;
@@ -109,4 +121,33 @@ section {
 #bio {
 	width: 80%;
 	padding: 15px;
+}
+.theatrenow {
+	font-family: 'Sawarabi Gothic', sans-serif;
+	margin: 25px;
+}
+.theatrenow strong {
+	font-weight: 900;
+	color: black;
+}
+.theatrenow, .connecc emphasis {
+	padding: 0;
+	margin: 0;
+	font-size: 11pt;
+	color: grey;
+	font-style: italic;
+}
+.theatrenow h1 {
+	font-size: 35px;
+	padding: 0;
+	margin: 0;
+	color: black;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+.theatrenow p {
+	text-align: justify;
+}
+.theatrenow .screenshots {
+	border: thin solid #C9C9C9;
+	margin-bottom: 10px;
 }
