@@ -58,6 +58,9 @@ nav {
 	padding: 15px;
 	color: #f4f4f4;
 }
+.fas {
+	padding: 15px;
+}
 
 .col-lg {
 	text-align: center;
@@ -102,10 +105,13 @@ section {
 #projects-section {
 	background-color: var(--accent-light);
 }
+#contact-section {
+	text-align:center!important; 
+}
 .project-icon {
 	padding: 25px;
-	height: 230px;
-	width: 200px;
+	height: 150px;
+	width: auto;
 }
 .dev-icon {
 	font-size: 50px;
@@ -130,7 +136,7 @@ section {
 	font-weight: 900;
 	color: black;
 }
-.theatrenow, .connecc emphasis {
+.theatrenow emphasis, .connecc emphasis {
 	padding: 0;
 	margin: 0;
 	font-size: 11pt;
@@ -142,7 +148,8 @@ section {
 	padding: 0;
 	margin: 0;
 	color: black;
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-family: 'DM Serif Text', serif;
+
 }
 .theatrenow p {
 	text-align: justify;
