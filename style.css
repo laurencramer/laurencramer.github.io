@@ -1,6 +1,7 @@
 :root {
 	--jumbo: #497AE1;
-	--accent-light: #AF9CF3;
+	--accent-light: #12CFC8;
+	--accent-dark: #00B8B1;
 	
 }
 
@@ -103,7 +104,7 @@ section {
 	
 }
 #projects-section {
-	background-color: var(--accent-light);
+	background-color: #FFFFFF;
 }
 #contact-section {
 	text-align:center!important; 
@@ -118,12 +119,25 @@ section {
 	display: inline !important;
 }
 .card {
-	border-radius: 20px!important;
 }
 .card-body {
 	background-color: #F4F4F4;
-	border-radius: 0px 0px 20px 20px!important;
+	padding: 10px!important;
 }
+.card-body .btn {
+	background-color: var(--accent-light)!important;
+	border-color: var(--accent-dark)!important;
+}
+.card-body .card-title {
+	font-size: 1.1em;
+	font-weight: 600;
+}
+.card-body .card-text {
+	font-size:.9em;
+	text-align: justify;
+
+}
+
 #bio {
 	width: 80%;
 	padding: 15px;
