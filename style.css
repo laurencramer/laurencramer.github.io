@@ -17,7 +17,7 @@ body {
 	color: #cdcdcd;
 	font-size: 15px;
 	background: #f4f4f4;
-	font-family: 'Sawarabi Gothic', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .main {
@@ -45,7 +45,7 @@ nav a:hover {
 
 nav {
 	font-size: 15px;
-	font-family: 'Sawarabi Gothic', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	background-color: #497AE1;
 }
 .jumbotron {
@@ -73,7 +73,7 @@ nav {
 	padding-top: 12%;
 	font-weight: 800;
 	text-align: center !important;
-	font-family: 'Signika', sans-serif;
+	font-family: 'Francois One', sans-serif;
 }
 
 .subtitle {
@@ -96,7 +96,7 @@ nav {
 	font-family: 'Signika', sans-serif; 
 }
 section {
-	padding-top: 5%;
+	padding-top: 10%;
 	padding-bottom: 5%;
 	min-height: 600px;
 }
