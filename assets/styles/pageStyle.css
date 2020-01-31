@@ -1,11 +1,20 @@
 @charset "UTF-8";
 #mainwrapper header {
-	background-color: #E1CFFF;
 	overflow: auto;
 	font-family: 'Rubik', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 }
+.school-color {
+	background: #96CDFF!important;
+}
+.personal-color {
+	background: #D4ADCF!important;
+}
+.professional-color {
+	background: #B8E9DB!important;
+}
+
 #mainwrapper header #logo {
 	width: 28%;
 	float: left;
@@ -44,6 +53,9 @@ header nav a, .currentLink {
 }
 #content #mainContent h1, #content #mainContent h2, #content #mainContent h3 {
 	font-family: 'Rubik', sans-serif!important;
+}
+#content #mainContent h4 {
+	color: #666!important;
 }
 #mainContent {
 	padding-left: 2%;
@@ -111,7 +123,6 @@ nav ul li a {
 	cursor: pointer;
 	color: white;
 }
-
 .lightHover:hover {
 	opacity: 0.5;
 }

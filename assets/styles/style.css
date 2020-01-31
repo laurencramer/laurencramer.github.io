@@ -141,6 +141,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	background: #E1CFFF;
 	transition: 0.3s;
 	outline:none;
+	text-decoration: none!important;
 
 }
 .btn:hover {
@@ -148,6 +149,15 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	width: 100%;
 	cursor: pointer;
 	color: white;
+}
+.btn-school, .btn-school:hover {
+	background: #96CDFF;
+}
+.btn-personal, .btn-personal:hover {
+	background: #D4ADCF;
+}
+.btn-professional, .btn-professional:hover {
+	background: #B8E9DB;
 }
 .btn-na {
 	margin: 10px auto;
@@ -162,7 +172,9 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	width: 5%;
 	background: #D4D4D4;
 }
-
+.lightHover:hover {
+	opacity: 0.5;
+}
 /* Footer */
 footer .footerDisclaimer {
 	font-family: sans-serif;
