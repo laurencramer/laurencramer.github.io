@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lauren Cramer</title>
+<link href="../assets/styles/pageStyle.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="mainwrapper">
+  <header> 
+    <div id="logo"><a href="index.html"><strong>LAUREN CRAMER</strong></a></div>
+    <nav> <a href="../professional-projects.html" title="Link">Professional Projects</a>|<a href="../personal-projects.html" title="Link">Personal Projects</a>|<p class="currentLink">Coursework </p> </nav>
+  </header>
+  <div id="content">
+    <section id="mainContent"> 
+		<a href="../school-projects.html" title="Return to all coursework"><img src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" alt="Back arrow" class="lightHover"></a>
+	
+      <h1>Project in Ubiquitous Computing</h1>
+      <h3>About the project</h3>
+		<p>The project consisted of designing, developing, and implementing our own Internet of Things technology. For the project, we identified a problem and designed a device with the intention of eliminating or reducing that problem. In this case, the problem consisted of empty coffee pots in a communal setting and the solution, a reminder-based, internet-connected coffee pot.
+		</p>
+		<p>
+		A common issue, especially in office settings, is someone killing a communal pot of coffee and not brewing a new pot. In other words, an empty coffee pot when there should always be coffee readily available. The issues are addressed with the creation of a “smart” coffee maker. People can get very frustrated when they go to get a cup of coffee only to find that it’s empty. Most coffee pot users are not actively aware that their cup may be the last. Whoever killed the coffee pot wouldn’t want anyone to know they did it because it would frustrate and upset the other coffee drinkers. We determined that shaming and raising public awareness is the best way to deter someone from not brewing a new pot of coffee after finishing the previous pot. Our solution to this problem was to create a device that takes a picture of the coffee maker user and emails the photo to their coworkers. The interface would allow for custom mailing lists and messages that are sent out when someone kills the coffee. The coffee pot gives the user time to refill the coffee pot before taking their picture and sending it out to people on the mailing list. The goal of our “smart” coffee maker is to shame the user if they don’t brew a new pot of coffee by letting all of their coworkers know that they are the ones who killed the pot. 
+		</p>
+	<br>
+	<h3>The device</h3>
+		<p>
+		Our device features a coffee maker that sits atop two boards separated by a load cell. This allows for measurement of the weight of the carafe, which the attached Raspberry Pi receives. The attached Pi Cam, located next to the coffee maker, is tilted upwards at an optimal angle for taking a picture of the user. The boards under the coffee maker include bolts and washers to create space between the wood and the load cell to create a stable base and get an accurate reading. 
+		</p>
+		<img src="../assets/148/coffee-maker-sketch.png">
+	<h3>The interface</h3>
+		<p>
+		<img src="../assets/148/01-Recent Activity.png" width="30%">
+		<img src="../assets/148/02-Email.png" width="30%">
+		<img src="../assets/148/03-Settings.png" width="30%">
+		</p>
+		<br>
+	<h3>How it works</h3>
+		<p>
+		Our coffee maker features a Raspberry Pi, a scale, and a camera. The Pi knows the weight of the carafe when the pot is empty. When a user removes the carafe, the device takes their photo. After taking the photo, a 90-second timer starts, giving the user a grace period to put the carafe back and/or brew a new pot of coffee. If the user puts the carafe back and the device detects, by weight, that the carafe is empty, the photo of the user is saved locally and emailed to a lists of email addresses along with a note to shame them for not making a new pot. Similarly, if the user does not put the carafe back or make a new pot in the 90-second grace period, their photo will also be emailed out along with a note to shame them for forgetting. If the user puts the carafe back and it still has (enough) coffee it in or if the user puts the empty carafe back and starts brewing a new pot, their photo is deleted and is not emailed. 
+		</p>
+		<br>
+	<h3>Source code</h3>
+		<p>
+		<textarea rows="10" cols="80">
+"import RPi.GPIO as GPIO
+import os, subprocess, sys, time
+from hx711 import HX711 as HX711Base
+from modules.hx711 import HX711
+from modules.led import Led
+from emailer import mail_all
+
+# define constants 
+WEIGHT_OF_CARAFE = 371
+MIN_CUPS_SAFE = 2
+# (min cups * 6oz/cup * 30g/oz) + weight of carafe in g
+MIN_WEIGHT_SAFE = (MIN_CUPS_SAFE * 6 * 30) + WEIGHT_OF_CARAFE 
+GRACE_PERIOD = 30  # time to make a new pot in seconds
+PHOTO_DIR = './photos'
+
+# init hx711 and load cell
+hx = HX711(5, 6)
+hx.set_reference_unit(-410)
+
+# prepare led
+LED_RED = Led(23)
+LED_GREEN = Led(24)
+LED_YELLOW = Led(25)
+
+BTN = 3
+
+# setup button
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(BTN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
+def cleanAndExit():
+GPIO.cleanup()
+delete_photo()
+sys.exit()
+
+def setup():
+while True:
+LED_RED.blink()
+input_state = GPIO.input(BTN)
+print(input_state) 
+if input_state == False:
+# print('button pressed')
+hx.reset()
+hx.tare()
+break
+else:
+pass
+
+def main():
+try:
+setup()
+while True:
+# make sure all the lights are off
+LED_RED.off()
+LED_YELLOW.off()
+LED_GREEN.off()
+
+# wait for someone to start brewing coffee
+wait_for_brew()  # BLINKS YELLOW
+while True:
+if mainloop() is False:
+break
+
+except (KeyboardInterrupt, SystemExit):
+cleanAndExit()
+
+except Exception as e:
+GPIO.cleanup()
+delete_photo()
+raise e
+
+
+def wait_for_brew():
+print('waiting for new brew')
+while True:
+LED_YELLOW.blink(1, 0.5)
+if get_reading() >= MIN_WEIGHT_SAFE:
+break
+
+def mainloop():
+LED_GREEN.on()
+while True:
+# monitor weight
+reading = get_reading()
+# if we detect weight lower than the weight of empty carafe
+# then someone must have removed the pot from the warmer
+if reading < WEIGHT_OF_CARAFE:
+LED_GREEN.off()
+LED_RED.on()
+timestamp = time.localtime()  # save timestamp when take_photo() called
+take_photo()
+
+# start timer
+start = time.time()
+LED_RED.off()
+
+while True:
+LED_YELLOW.blink(1, 0.5)
+timer = time.time() - start
+# print(round(timer))
+if timer < GRACE_PERIOD:
+reading = get_reading()
+# poured a cup with left to share or made a new pot
+if reading > MIN_WEIGHT_SAFE:
+delete_photo()
+LED_GREEN.on()
+print('***** enjoy your coffee! *****')
+break
+# had the nerve to put empty or near-empty pot back *shame!*
+elif reading >= WEIGHT_OF_CARAFE:
+LED_RED.on()
+LED_YELLOW.on()
+
+# time's up
+else:
+# report the last drop bandit!!!!
+LED_RED.on()
+LED_YELLOW.on()
+filename = save_photo(timestamp)
+if filename is not None:
+LED_GREEN.on()
+email_photo(filename)
+time.sleep(2)
+LED_GREEN.off()
+return False
+
+def take_photo():
+subprocess.run('./take_photo.sh')  # saves as ./photos/tmp.jpg
+path = os.path.join(PHOTO_DIR, 'tmp.jpg')
+if os.path.isfile(path):
+return True
+else:
+return False
+
+def delete_photo(filename='tmp.jpg'):
+# print('deleting... ' + str(filename))
+path = os.path.join(PHOTO_DIR, filename)
+if os.path.isfile(path):
+os.remove(path)
+if os.path.isfile(path):
+return False
+return True
+
+def save_photo(timestamp=time.localtime()):
+"""
+rename the temporary photo at PHOTO_DIR/tmp.jpg
+with the appropriate timestamped filename in same directory
+param: timestamp: seconds since the epoch when photo taken (default now)
+type: timestamp: struct_time such as return from time.localtime()
+rtype: filename of newly saved file, or None if save failed
+"""
+# print('saving...')
+src_path = os.path.join(PHOTO_DIR, 'tmp.jpg')
+filename = str(time.strftime('%Y-%m-%d_%H%M%S', timestamp)) + '.jpg'
+dst_path = os.path.join(PHOTO_DIR, str(filename))
+if os.path.isfile(src_path):
+os.rename(src_path, dst_path)
+if os.path.isfile(dst_path):
+return filename
+# else:
+# print('oops! unable to rename file')
+
+# else:
+#     print('could not rename file because ' + str(src_path) + ' does not exist')
+
+return None
+
+def email_photo(filename):
+mail_all(filename, PHOTO_DIR)
+
+def get_reading():
+hx.reset()
+time.sleep(0.5)
+return round(hx.get_weight())
+
+if __name__ == "__main__":
+main()
+
+		</textarea>
+		</p>
+	<br>
+	<h3>Downloads</h3>
+		<p>
+		Source code: <a href="../assets/148/emailTo.py" download="emailTo.py" target="_blank">emailTo.py</a>
+		<br>
+		Project documentation: <a href="../assets/148/documentation.pdf" target="_blank">Here</a>
+		</p>	
+    </section>
+    
+	</div>
+</div>
+</body>
+</html>
