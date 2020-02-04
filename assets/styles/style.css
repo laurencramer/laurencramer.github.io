@@ -142,7 +142,6 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	transition: 0.3s;
 	outline:none;
 	text-decoration: none!important;
-
 }
 .btn:hover {
 	background: #D4BAFF;
@@ -176,7 +175,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 .lightHover:hover {
 	opacity: 0.5;
 }
-/* Footer */
+
 footer .footerDisclaimer {
 	font-family: sans-serif;
 	font-size: 14px;
@@ -188,19 +187,9 @@ footer .footerDisclaimer span {
 	color: rgba(181,178,178,1.00);
 	font-weight: 400;
 }
-footer .footerNote {
-	font-family: sans-serif;
-	font-size: 14px;
-	line-height: 18px;
-	color: rgba(104,103,103,1.00);
-	font-weight: 700;
-}
-footer .footerNote span {
-	color: rgba(181,178,178,1.00);
-	font-weight: 400;
-}
 
-/* Media query for Mobile devices*/
+
+/* Mobile devices*/
 @media only screen and (min-width : 285px) and (max-width : 480px) {
 /* Header */
 header {
@@ -230,7 +219,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 	display: inline-block;
 	margin-right: 23px;
 }
-/* Main content sections */
+
 .mainContent .section1 {
 	text-align: center;
 	margin-bottom: 10%;
@@ -246,7 +235,6 @@ header .socialNetworkNavBar .socialNetworkNav {
 }
 .mainContent .section1 .section1Content {
 	display: inline-block;
-	text-align: left;
 	font-family: sans-serif;
 	text-align: justify;
 }
@@ -280,22 +268,18 @@ header .socialNetworkNavBar .socialNetworkNav {
   cursor: pointer;
   margin: 5px;
 }
-/* Footer */
 footer {
 	display: block;
 	text-align: center;
-	font-family: sans-serif;
 }
 }
 
-/* Media Query for Tablets */
+/* Tablets */
 @media only screen and (min-width : 481px) and (max-width : 1024px) {
-/* Header */
 header {
 	width: 100%;
 	float: none;
 }
-
 header .profilePhoto {
 	display: none;
 }
@@ -309,7 +293,6 @@ header .socialNetworkNavBar .socialNetworkNav {
 	display: inline-block;
 	margin-right: 23px;
 }
-/* Main content and sections */
 .section1 .section1Title, .section2 .section1Title {
 	text-align: center;
 }
@@ -349,15 +332,9 @@ header .socialNetworkNavBar .socialNetworkNav {
 	height: 48px;
 	margin-top: 5%;
 }
-/* Footer */
 footer .footerDisclaimer {
 	float: left;
 	margin-left: 3%;
-	font-family: sans-serif;
-}
-footer .footerNote {
-	float: right;
-	margin-right: 3%;
 	font-family: sans-serif;
 }
 }
@@ -418,15 +395,8 @@ header .socialNetworkNavBar .socialNetworkNav {
 	height: 48px;
 }
 
-/* Footer */
 footer .footerDisclaimer {
 	float: left;
 	margin-left: 3%;
-	font-family: sans-serif;
-}
-footer .footerNote {
-	float: right;
-	margin-right: 3%;
-	font-family: sans-serif;
 }
 }
