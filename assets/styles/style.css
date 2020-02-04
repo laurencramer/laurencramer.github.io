@@ -207,11 +207,8 @@ header {
 	width: 100%;
 	float: none;
 }
-header .profileLogo .logoPlaceholder {
-	display: inline-block;
-}
 header .profilePhoto {
-	display: inline-block;
+	display: none;
 }
 header .profileHeader {
 	text-align: center;
@@ -300,11 +297,7 @@ header {
 }
 
 header .profilePhoto {
-	float: left;
-	clear: both;
-	margin-right: 3%;
-	margin-top: 5%;
-	padding-top: 1%;
+	display: none;
 }
 header .profileHeader {
 	text-align: left;
@@ -375,7 +368,7 @@ header .profilePhoto {
 	float: left;
 	clear: both;
 	margin-right: 3%;
-	padding-top: 1%;
+	padding-top: 3%;
 }
 header .profilePhoto img {
 	border-radius: 50%;
