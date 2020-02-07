@@ -126,28 +126,31 @@ nav ul li a {
 .lightHover:hover {
 	opacity: 0.5;
 }
-
+.softwareLogo {
+	padding-right: 10px;
+}
 @media screen and (max-width:769px) {
-#mainContent {
-	padding-top: 0px;
-	float: none;
-	width: 96%;
+	#mainContent {
+		padding-top: 0px;
+		float: none;
+		width: 96%;
+	}
+	#mainwrapper header {
+		width: 100%;
+	}
 }
-#mainwrapper header {
-	width: 100%;
-}
-
 	
 @media screen and (max-width:480px) {
-#mainwrapper header #logo {
-	width: 96%;
-	margin-left: 2%;
-}
-#mainwrapper header nav {
-	text-align: center;
-	background-color: rgba(255,255,255,1.00);
-	width: 98%;
-}
-#content #mainContent h3 {
-	font-size: 14px;
+	#mainwrapper header #logo {
+		width: 96%;
+		margin-left: 2%;
+	}
+	#mainwrapper header nav {
+		text-align: center;
+		background-color: rgba(255,255,255,1.00);
+		width: 98%;
+	}
+	#content #mainContent h3 {
+		font-size: 14px;
+	}
 }
