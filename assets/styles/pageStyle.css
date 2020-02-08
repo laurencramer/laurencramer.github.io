@@ -165,6 +165,13 @@ hr {
 .scale {
 	height: 300px;
 }
+.mockup {
+	float: left;
+	display: block;
+	height: 500px;
+	width: auto;
+	padding-right: 20px;	
+	}
 @media screen and (max-width:769px) {
 	#mainContent {
 		padding-top: 0px;
@@ -177,6 +184,10 @@ hr {
 	.scale {
 		width: 100%;
 		height: auto;
+	}
+	.mockup {
+		height: 400px;
+		width: auto;
 	}
 }
 	
@@ -198,7 +209,14 @@ hr {
 		height: auto;
 	}
 	.softwareLogo {
+		display: inline;
+		padding-bottom: 10px;
+	}
+	.mockup {
 		display: block;
+		float: none!important;
+		width: 100%;
+		height: auto;
 		padding-bottom: 10px;
 	}
 }
