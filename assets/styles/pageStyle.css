@@ -145,13 +145,7 @@ footer .footerDisclaimer span {
 .softwareLogo {
 	padding-right: 10px;
 }
-iframe {
-    border: 1px solid black;
-    width: 100%;
-}
-.output {
-    background: #eee;
-}
+
 .schoolLink {
 	color: #96CDFF;
 	font-weight: 600;
@@ -168,6 +162,9 @@ hr {
 	background-color: #D3D3D3;
 	border: none;
 }
+.scale {
+	height: 300px;
+}
 @media screen and (max-width:769px) {
 	#mainContent {
 		padding-top: 0px;
@@ -176,6 +173,10 @@ hr {
 	}
 	#mainwrapper header {
 		width: 100%;
+	}
+	.scale {
+		width: 100%;
+		height: auto;
 	}
 }
 	
@@ -191,5 +192,13 @@ hr {
 	}
 	#content #mainContent h3 {
 		font-size: 14px;
+	}
+	.scale {
+		width: 100%;
+		height: auto;
+	}
+	.softwareLogo {
+		display: block;
+		padding-bottom: 10px;
 	}
 }
