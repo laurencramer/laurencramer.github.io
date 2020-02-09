@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lauren Cramer</title>
+<link href="../assets/styles/pageStyle.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<header class="personal-color"> 
+			<div id="logo"><a href="../index.html"><strong>LAUREN CRAMER</strong></a></div>
+			<nav>
+				<a href="#" title="Link">Professional Projects</a>|<p class="currentLink">Personal Projects</p>|<a href="../school-projects.html" title="Link">Coursework</a>
+			</nav>
+		</header>
+		<div id="content">
+			<section id="mainContent">
+				<a href="../personal-projects.html" title="All personal projects"><img src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" alt="Back arrow" class="lightHover"></a>
+				<h1>Daily UI Challenges</h1>
+				<p>A collection of various mobile and web designs based off the Daily UI challenges. New designs added daily!</p>
+				<div class="image-row">
+					<!--Modal Preview-->
+					<div class="image-col">
+						<button class="modalImage" data-modal="createAccount1">
+							<img src="../assets/personal/signup1.png" alt="Signup page" class="dailyUI">
+						</button>
+					</div>
+					<div class="image-col">
+						<button class="modalImage" data-modal="appDownload1">
+							<img src="../assets/personal/appdownload1.png" alt="Signup page" class="dailyUI">
+						</button>
+					</div>
+					<div class="image-col">
+						<button class="modalImage" data-modal="faq1">
+							<img src="../assets/personal/faq1.png" alt="Frequently asked questions page" class="dailyUI">
+						</button>
+					</div>
+				</div>
+				<div class="image-row">
+					<div class="image-col">
+						<button class="modalImage" data-modal="#">
+							<img src="../assets/personal/placeholder.png" alt="" class="dailyUI">
+						</button>
+					</div>
+					<div class="image-col">
+						<button class="modalImage" data-modal="#">
+							<img src="../assets/personal/placeholder.png" alt="" class="dailyUI">
+						</button>
+					</div>
+					<div class="image-col">
+						<button class="modalImage" data-modal="#">
+							<img src="../assets/personal/placeholder.png" alt="" class="dailyUI">
+						</button>
+					</div>
+  				</div>
+				<div class="image-row">
+					<div class="image-col">
+						<button class="modalImage" data-modal="#">
+							<img src="../assets/personal/placeholder.png" alt="" class="dailyUI">
+						</button>
+					</div>
+					<div class="image-col">
+						<button class="modalImage" data-modal="#">
+							<img src="../assets/personal/placeholder.png" alt="" class="dailyUI">
+						</button>
+					</div>
+					<div class="image-col">
+						<button class="modalImage" data-modal="#">
+							<img src="../assets/personal/placeholder.png" alt="" class="dailyUI">
+						</button>
+					</div>
+  				</div>
+
+
+					<!--Modal Content-->
+					<div id="createAccount1" class="modal">
+					  <div class="modal-content">
+						  <a class="close">&times;</a>
+						  <img src="../assets/personal/signup1.png" alt="Signup page" class="dailyUI expanded">
+					  </div>
+					</div>
+					<div id="appDownload1" class="modal">
+					  <div class="modal-content">
+						  <a class="close">&times;</a>
+						  <img src="../assets/personal/appdownload1.png" alt="Signup page" class="dailyUI expanded">
+					  </div>
+					</div>
+					<div id="faq1" class="modal">
+					  <div class="modal-content">
+						  <a class="close">&times;</a>
+						  <img src="../assets/personal/faq1.png" alt="Frequently asked questions page" class="dailyUI expanded">
+					  </div>
+					</div>
+			</section>
+		</div>
+	</div>
+<footer>
+  <hr>
+  <p class="footerDisclaimer">Copyright © Lauren Cramer. <span>All Rights Reserved</span></p>
+</footer>
+</body>
+<script>
+	
+
+var modalBtns = [...document.querySelectorAll(".modalImage")];
+modalBtns.forEach(function(btn){
+  btn.onclick = function() {
+    var modal = btn.getAttribute('data-modal');
+    document.getElementById(modal).style.display = "block";
+  }
+});
+
+var closeBtns = [...document.querySelectorAll(".close")];
+closeBtns.forEach(function(btn){
+  btn.onclick = function() {
+    var modal = btn.closest('.modal');
+    modal.style.display = "none";
+  }
+});
+
+window.onclick = function(event) {
+  if (event.target.className === "modal") {
+    event.target.style.display = "none";
+  }
+}
+	
+	
+	
+/*var expandImage = document.querySelector('expandImage');
+var imageModal = document.getElementById('imageModal');
+var outputBox = document.querySelector('output');
+var selectEl = document.querySelector('select');
+var confirmBtn = document.getElementById('confirmBtn');
+
+// "Update details" button opens the <dialog> modally
+expandImage.addEventListener('click', function onOpen() {
+  if (typeof imageModal.showModal === "function") {
+    imageModal.showModal();
+  } else {
+    alert("Unable to open in this browser.");
+  }
+});
+// "Favorite animal" input sets the value of the submit button
+selectEl.addEventListener('change', function onSelect(e) {
+  confirmBtn.value = selectEl.value;
+});
+// "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
+imageModal.addEventListener('close', function onClose() {
+  outputBox.value = imageModal.returnValue + " button clicked - " + (new Date()).toString();
+});
+
+imageModal.addEventListener('click', function (event) {
+    var rect = imageModal.getBoundingClientRect();
+    var isInDialog=(rect.top <= event.clientY && event.clientY <= rect.top + rect.height
+      && rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
+    if (!isInDialog) {
+        imageModal.close();
+    }
+});*/
+
+	
+	
+	
+</script>
+</html>
