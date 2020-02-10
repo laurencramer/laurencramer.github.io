@@ -110,6 +110,8 @@ header nav a, header nav .currentLink {
 /* Breadcrumb */
 .breadcrumb {
 	text-transform: lowercase;
+	padding-bottom: none;
+	display: block;
 }
 .breadcrumb .levelOne {
 	color: black;
@@ -124,6 +126,13 @@ header nav a, header nav .currentLink {
 	font-size: 1.3em;
 	display: inline-block;
 }
+.sub {
+	text-transform: uppercase;
+	font-size: 1em;
+	color: #888;
+	padding-bottom: 20px;
+	display: block;
+}
 .breadcrumb a, .breadcrumb a:hover {
 	text-decoration: none;
 }
@@ -133,6 +142,7 @@ header nav a, header nav .currentLink {
 .breadcrumb a:hover {
 	color: #444;
 }
+
 
 
 /* Animated Button */
