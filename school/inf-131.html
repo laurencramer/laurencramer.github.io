@@ -3,23 +3,39 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lauren Cramer</title>
-<link href="../assets/styles/pageStyle.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap" rel="stylesheet">
+	<title>Lauren Cramer</title>
+	<link href="../assets/styles/pageStyle.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Heebo|Lato&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="../assets/js/openNav.js"></script>
 </head>
 
 <body>
 	<div id="mainwrapper">
 		<header class="school-color"> 
-			<div id="logo"><a href="../index.html"><strong>LAUREN CRAMER</strong></a></div>
-			<nav>
-				<a href="../professional-projects.html" title="Link">Professional Projects</a>|<a href="../personal-projects.html" title="Link">Personal Projects</a>|<p class="currentLink">Coursework</p>
-			</nav>
+			<div id="logo"><a href="../index.html">LAUREN CRAMER</a></div>
+				<!--Desktop Navigation-->
+				<nav id="mainNav">
+					<a href="#" title="Link">PROFESSIONAL</a>
+					<a href="../personal/personal.html" title="Link">PERSONAL</a>
+					<p class="currentLink">SCHOOL</p>
+				</nav>
+				<!--Mobile Navigation-->
+				<div id="mobileNav">
+					<div class="school-color header" onclick="openNav()">LAUREN CRAMER<img src="../assets/images/menu.png" alt="menu bars" height="20px" style="float: right;"></div>
+					<div id="navLinks" class="school-color">
+						<a href="../index.html">HOME</a>
+						<a href="#">PROFESSIONAL</a>
+						<a href="../personal/personal.html">PERSONAL</a>
+						<a href="school.html">SCHOOL</a>
+					</div>
+				</div>
 		</header>
 		<div id="content">
 			<section id="mainContent">
-				<a href="../school-projects.html" title="All coursework"><img src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" alt="Back arrow" class="lightHover"></a>
-				<h1>Project in Human-Computer Interaction (2017 - 10 weeks)</h1>
+				<div class="breadcrumb">
+					<p class="levelOne"><a href="school.html" title="School Projects">School</a> // </p>
+					<p class="levelTwo">project in human-computer interaction - 2017 - 10 wks</p>
+				</div>
 				<h3>About</h3>
 					<p>We chose to redesign <a href="https://www.reddit.com/" title="Reddit" target="_blank" class="schoolLink">Reddit</a> in an effort to make the user interface more modern, more efficient, and design-oriented. The current interface was overwhelming and daunting to the average, inexperienced, or new user. Updating the interface would make the site more welcoming to newer users while keeping the functionality that expert or experienced users desire.
 					</p>
@@ -44,17 +60,17 @@
 					guidance and the provided guidance is still relatively unclear and unhelpful.
 					</p>
 				<h3>Redesign</h3>
-					<img src="../assets/131/reddit.jpg" alt="Reddit redesign mockup" width="600px">
+					<img src="assets/131/reddit.jpg" alt="Reddit redesign mockup" class="scale" width="800px">
 				<h3>Documentation/Resources</h3>
 					<p>
-					<a href="../assets/131/documentation.pdf" target="_blank" class="schoolLink">Project Documentation ⭧</a>
+					<a href="assets/131/documentation.pdf" target="_blank" class="schoolLink">Project Documentation ⭧</a>
 					</p>	
 			</section>
 		</div>
 	</div>
-<footer>
-  <hr>
-  <p class="footerDisclaimer">Copyright © Lauren Cramer. <span>All Rights Reserved</span></p>
-</footer>
+	<footer>
+		<hr>
+		<p><strong>Copyright © Lauren Cramer.</strong> <span>All Rights Reserved</span></p>
+	</footer>
 </body>
 </html>

@@ -3,23 +3,39 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lauren Cramer</title>
-<link href="../assets/styles/pageStyle.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap" rel="stylesheet">
+	<title>Lauren Cramer</title>
+	<link href="../assets/styles/pageStyle.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Heebo|Lato&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="../js/openNav.js"></script>
 </head>
 
 <body>
 	<div id="mainwrapper">
 		<header class="school-color"> 
-			<div id="logo"><a href="../index.html"><strong>LAUREN CRAMER</strong></a></div>
-			<nav>
-				<a href="../professional-projects.html" title="Link">Professional Projects</a>|<a href="../personal-projects.html" title="Link">Personal Projects</a>|<p class="currentLink">Coursework</p>
-			</nav>
+			<div id="logo"><a href="../index.html">LAUREN CRAMER</a></div>
+				<!--Desktop Navigation-->
+				<nav id="mainNav">
+					<a href="#" title="Link">PROFESSIONAL</a>
+					<a href="../personal/personal.html" title="Link">PERSONAL</a>
+					<p class="currentLink">SCHOOL</p>
+				</nav>
+				<!--Mobile Navigation-->
+				<div id="mobileNav">
+					<div class="school-color header" onclick="openNav()">LAUREN CRAMER<img src="../assets/images/menu.png" alt="menu bars" height="20px" style="float: right;"></div>
+					<div id="navLinks" class="school-color">
+						<a href="../index.html">HOME</a>
+						<a href="#">PROFESSIONAL</a>
+						<a href="../personal/personal.html">PERSONAL</a>
+						<a href="#">SCHOOL</a>
+					</div>
+				</div>
 		</header>
 		<div id="content">
 			<section id="mainContent">
-				<a href="../school-projects.html" title="All coursework"><img src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" alt="Back arrow" class="lightHover"></a>
-				<h1>Project in User Interface Software (2019 - 10 weeks)</h1>
+				<div class="breadcrumb">
+					<p class="levelOne"><a href="school.html" title="School Projects">School</a> // </p>
+					<p class="levelTwo">project in user interface software (2019 - 10 weeks)</p>
+				</div>
 				<h3>About</h3>
 					<p>The project was to design a new application to solve a problem that our group thought was missing from the market. We created Cheqin, a mood-tracking mobile application that was designed to make mood-tracking easier and provide easily understandle data to increase the benefits of mood-tracking. We were required to conduct usability tests, create a competitive analysis, create prototypes and wireframes, and produce a final design.
 					</p>
@@ -32,12 +48,12 @@
 				
 				<h3>The app</h3>
 				<h4>Creating a new log entry & seraching for previous entries</h4>
-				<img src="../assets/134/cheqin.gif" height="500px" width="auto" alt="Gif of mood-tracking entry in Cheqin">
-				<img src="../assets/134/cheqin2.gif" height="500px" width="auto" alt="Gif of searching in Cheqin">
+				<img src="assets/134/cheqin.gif" height="500px" width="auto" alt="Gif of mood-tracking entry in Cheqin">
+				<img src="assets/134/cheqin2.gif" height="500px" width="auto" alt="Gif of searching in Cheqin">
 				<h4>Viewing data</h4>
-				<img src="../assets/134/still1.png" height="500px" width="auto" alt="Screenshot of daily data in Cheqin">
-				<img src="../assets/134/still2.png" height="500px" width="auto" alt="Screenshot of weekly data in Cheqin">
-				<img src="../assets/134/still3.png" height="500px" width="auto" alt="Screenshot of monthly data in Cheqin">
+				<img src="assets/134/still1.png" height="500px" width="auto" alt="Screenshot of daily data in Cheqin">
+				<img src="assets/134/still2.png" height="500px" width="auto" alt="Screenshot of weekly data in Cheqin">
+				<img src="assets/134/still3.png" height="500px" width="auto" alt="Screenshot of monthly data in Cheqin">
 				
 				
 				<h3>Commentary from the professor</h3>
@@ -47,9 +63,9 @@
 			</section>
 		</div>
 	</div>
-<footer>
-  <hr>
-  <p class="footerDisclaimer">Copyright © Lauren Cramer. <span>All Rights Reserved</span></p>
-</footer>
+	<footer>
+		<hr>
+		<p><strong>Copyright © Lauren Cramer.</strong> <span>All Rights Reserved</span></p>
+	</footer>
 </body>
 </html>

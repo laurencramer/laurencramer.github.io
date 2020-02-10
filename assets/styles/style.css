@@ -1,125 +1,143 @@
 @charset "utf-8";
 
 body {
+	font-family: 'Lato', sans-serif;
 	margin-left: auto;
 	margin-right: auto;
-	width: 92%;
+	color: #777;
 	max-width: 960px;
-	padding-left: 2.275%;
-	padding-right: 2.275%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
 }
+
+/* Header */
 header {
 	text-align: center;
 	display: block;
 }
-
 header .profileHeader h1 {
-	font-family: 'Montserrat', sans-serif;
-	color: rgba(146,146,146,1.00);
+	font-family: 'Heebo', sans-serif;
+	color: #555;
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 24px;
 }
 header .profileHeader h3 {
-	font-family: sans-serif;
-	color: rgba(146,146,146,1.00);
+	font-family: 'Lato', sans-serif;
+	color: #666;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 24px;
 }
-hr {
-	background-color: rgba(208,207,207,1.00);
-	height: 1px;
-}
+
 header .profileHeader p {
-	font-family: sans-serif;
-	color: rgba(146,146,146,1.00);
+	font-family: 'Lato', sans-serif;
+	color: #777;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.8;
 	overflow-y: auto;
 }
-header .socialNetworkNavBar {
+
+
+hr {
+	background-color: #C8C8C8;
+	height: 1px;
+}
+
+
+/* Social Links */
+header .socialNav {
 	text-align: center;
 	display: block;
 	margin-top: 60px;
 	clear: both;
 }
-header .socialNetworkNavBar .socialNetworkNav {
+header .socialNav .socialNavIcon {
 	border-radius: 50%;
 	cursor: pointer;
 }
-header .socialNetworkNavBar .socialNetworkNav img:hover {
+header .socialNav .socialNavIcon img:hover {
 	opacity: 0.5;
 }
+
 /* Main Content sections */
 .mainContent .section1 {
 	display: block;
 }
-.section1 .sectionTitle, .section2 .sectionTitle {
-	font-family: 'Montserrat', sans-serif;
-	color: rgba(146,146,146,1.00);
-	font-size: 18px;
-	font-weight: 700;
+.section1 .sectionTitle {
+	font-family: 'Lato', sans-serif;
+	color: #666;
+	font-size: 1.2em;
+	font-weight: 600;
 	text-transform: uppercase;
 }
-.section1 .sectionTitleRule, .section2 .sectionTitleRule {
+.section1 .sectionContentSubTitle {
+	font-family: 'Lato', sans-serif;
+	color: #666;
+	font-size: 1em;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.section1 .sectionTitleRule {
 	margin: 0 3% 0 0;
 	float: left;
 	clear: both;
 }
-.section1 .sectionTitleRule2, .section2 .sectionTitleRule2 {
+.section1 .sectionTitleRule2  {
 	background-color: rgba(208,207,207,1.00);
 	height: 1px;
 	padding: 0px;
 }
 .mainContent .section1 .section1Content {
-	font-family: ProximaNova;
+	font-family: 'Lato', sans-serif;
 	font-size: 14px;
-	font-weight: 100;
-	color: rgba(152,151,151,1.00);
 }
-.mainContent .section1 .section1Content span {
-	color: rgba(146,146,146,1.00);
-	font-family: sans-serif;
+.section1 .sectionContent {
+	font-family: 'Lato', sans-serif;
+	color: #777;
+	font-size: 1em;
+	font-weight: 500;
 }
-.section2 .sectionContentTitle {
-	font-family: sans-serif;
-	color: rgba(146,146,146,1.00);
+.jobTitle {
+	font-size:1.3em;
+	margin: none;
+	color: #666; 
+	font-weight: 600;
+	padding: 5px 0 5px 0;
+	display: inline-block;
+}
+.divider {
+	display: inline-block;
 	font-size: 18px;
-	font-weight: 700;
+	padding: 0 3px 0 6px;
 }
-.section2 .sectionContentSubTitle {
-	font-family: sans-serif;
-	color: rgba(68,67,67,1.00);
-	font-size: 14px;
-	font-weight: 400;
-}
-.section2 .sectionContent {
-	font-family: sans-serif;
-	color: rgba(146,146,146,1.00);
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.8;
+.companyName {
+	font-size:1.2em;
+	margin: none;
+	color: #888;
+	font-weight: 600;
+	display: inline-block;
 }
 .mainContent {
 	display: block;
 }
-.mainContent .externalResourcesNav .externalResources {
-	background-color: #E1CFFF;
+
+/* External Resource Links */
+.mainContent .externalResource .externalResourceLink {
+	background-color: #96CDFF;
 	display: inline-block;
 	text-align: center;
-	margin-top: 0px;
-	padding-top: 3%;
+	padding: 2% 3% 0 3%;
 	cursor: pointer;
 }
-.mainContent .externalResourcesNav .externalResources:hover {
+.mainContent .externalResource .externalResourceLink:hover {
 	background-color: #D4BAFF;
 }
-.externalResourcesNav .externalResources a {
-	font-family: 'Montserrat', sans-serif;
-	color: rgba(255,255,255,1.00);
-	font-size: 14px;
+.externalResource .externalResourceLink a {
+	font-family: 'Lato', sans-serif;
+	color: white;
+	font-size: 15px;
 	font-weight: 400;
 	line-height: 16px;
 	text-decoration: none;
@@ -128,6 +146,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	width: 200px;
 }
 .btn {
+	font-family: 'Lato', sans-serif;
 	margin: 10px auto;
 	border: none;
 	padding: 12px 25px;
@@ -138,7 +157,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	mix-blend-mode: difference;
 	border-radius:50px;
 	width: 5%;
-	background: #E1CFFF;
+	background: #96CDFF;
 	transition: 0.3s;
 	outline:none;
 	text-decoration: none!important;
@@ -172,231 +191,244 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	background: #D4D4D4;
 	
 }
-.lightHover:hover {
-	opacity: 0.5;
-}
 
-footer .footerDisclaimer {
+/* Footer */
+footer {
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	padding-top: 30px;
+}
+footer p {
 	font-family: sans-serif;
 	font-size: 14px;
 	line-height: 18px;
-	color: rgba(104,103,103,1.00);
-	font-weight: 700;
-}
-footer .footerDisclaimer span {
-	color: rgba(181,178,178,1.00);
-	font-weight: 400;
+	color: rgba(73,73,73,1.00);
 }
 
 
 /* Mobile devices*/
 @media only screen and (min-width : 285px) and (max-width : 480px) {
-/* Header */
-header {
-	width: 100%;
-	float: none;
-}
-header .profilePhoto {
-	display: none;
-}
-header .profileHeader {
-	text-align: center;
-	margin-top: 10%;
-}
-header .profileHeader p {
-	text-align: justify;
-}
-header .socialNetworkNavBar {
-	text-align: center;
-	display: block;
-	margin-top: 60px;
-	clear: both;
-	margin-bottom: 15%;
-}
-header .socialNetworkNavBar .socialNetworkNav {
-	width: 60px;
-	height: 60px;
-	display: inline-block;
-	margin-right: 23px;
-}
+	/* Header */
+	header {
+		width: 100%;
+		float: none;
+	}
+	header .profilePhoto {
+		display: none;
+	}
+	header .profileHeader {
+		text-align: center;
+		margin-top: 10%;
+	}
+	header .profileHeader p {
+		text-align: center;
+	}
+	header .socialNav {
+		text-align: center;
+		display: block;
+		margin-top: 60px;
+		clear: both;
+		margin-bottom: 15%;
+	}
+	header .socialNav .socialNavIcon {
+		width: 60px;
+		height: 60px;
+		display: inline-block;
+		margin-right: 23px;
+	}
 
-.mainContent .section1 {
-	text-align: center;
-	margin-bottom: 10%;
-}
-.section1 .section1Title, .section2 .section1Title {
-	text-align: center;
-}
-.section1 .sectionTitleRule, .section2 .sectionTitleRule {
-	width: 100%;
-}
-.section1 .sectionTitleRule2, .section2 .sectionTitleRule2 {
-	display: none;
-}
-.mainContent .section1 .section1Content {
-	display: inline-block;
-	font-family: sans-serif;
-	text-align: justify;
-}
-.mainContent .section2 {
-	display: block;
-	text-align: center;
-}
-.section2 .section2Content {
-	margin-top: 10%;
-	text-align: justify;
-	margin-bottom: 10%;
-}
-.mainContent .externalResourcesNav {
-	margin-bottom: 10%;
-}
-.mainContent .externalResourcesNav .externalResources {
-	width: 100%;
-	height: 35px;
-}
-
-.button {
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-footer {
-	display: block;
-	text-align: center;
-}
+	.mainContent .section1 {
+		text-align: justify;
+		margin-bottom: 10%;
+		width: 100%;
+	}
+	.section1 .section1Title {
+		text-align: center;
+	}
+	.jobTitle {
+		font-size:1.2em;
+		line-height: 14px;
+		padding: 5px 0 10px 0;
+		margin: none;
+		color: #666; 
+		font-weight: 600;
+		display: block;
+	}
+	.divider {
+		display: none;
+	}
+	.companyName {
+		font-size:1.1em;
+		line-height: 14px;
+		padding: 0 0 5px 0;
+		margin: none;
+		color: #888;
+		font-weight: 600;
+		display: block;
+	}
+	.section1 .sectionTitleRule {
+		width: 100%;
+	}
+	.section1 .sectionTitleRule2 {
+		display: none;
+	}
+	.mainContent .section1 .section1Content {
+		display: inline-block;
+		font-family: sans-serif;
+		text-align: left;
+	}
+	.mainContent .externalResource {
+		margin-top: 40px;
+		text-align: center;
+		padding-top: 0px;
+	}
+	.mainContent .externalResource .externalResourceLink {
+		width: 80%;
+		height: 35px;
+		margin-top: 0%;
+	}
+	.button {
+		border-radius: 4px;
+		background-color: #f4511e;
+		border: none;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 28px;
+		padding: 20px;
+		width: 200px;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 5px;
+	}
+	footer {
+		display: block;
+		text-align: center;
+	}
 }
 
 /* Tablets */
 @media only screen and (min-width : 481px) and (max-width : 1024px) {
-header {
-	width: 100%;
-	float: none;
-}
-header .profilePhoto {
-	display: none;
-}
-header .profileHeader {
-	text-align: left;
-	margin-top: 7%;
-}
-header .socialNetworkNavBar .socialNetworkNav {
-	width: 74px;
-	height: 74px;
-	display: inline-block;
-	margin-right: 23px;
-}
-.section1 .section1Title, .section2 .section1Title {
-	text-align: center;
-}
-.section1 .sectionTitleRule, .section2 .sectionTitleRule {
-	width: 100%;
-}
-.section1 .sectionTitleRule2, .section2 .sectionTitleRule2 {
-	display: none;
-}
-.mainContent .section1 .section1Content {
-	display: block;
-	margin: 0% 0% 0% 20%;
-	font-family: sans-serif;
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
-.mainContent .section2 {
-	clear: both;
-}
-.section2 .section2Content {
-	padding: 0px;
-	margin-left: 20%;
-	font-family: sans-serif;
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
-.mainContent .externalResourcesNav {
-	margin-left: 20%;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	text-align: center;
-	padding-top: 0px;
-	clear: both;
-}
-.mainContent .externalResourcesNav .externalResources {
-	width: 199px;
-	height: 48px;
-	margin-top: 5%;
-}
-footer .footerDisclaimer {
-	float: left;
-	margin-left: 3%;
-	font-family: sans-serif;
-}
+	header {
+		width: 100%;
+		float: none;
+	}
+	header .profilePhoto {
+		display: none;
+	}
+	header .profileHeader {
+		text-align: center;
+		margin-top: 7%;
+	}
+	header .profileHeader p {
+		text-align: left;
+	}
+	header .socialNav .socialNavIcon {
+		width: 74px;
+		height: 74px;
+		display: inline-block;
+		margin-right: 25px;
+	}
+	.section1 .section1Title {
+		text-align: center;
+	}
+	.section1 .sectionContentSubTitle {
+		text-align: left;
+		font-style: italic;
+		color: #666;
+	}
+	.jobTitle {
+		font-size:1.2em;
+		line-height: 14px;
+		padding: 5px 0 10px 0;
+		margin: none;
+		color: #666; 
+		font-weight: 600;
+		display: block;
+	}
+	.divider {
+		display: none;
+	}
+	.companyName {
+		font-size:1.1em;
+		line-height: 14px;
+		padding: 0 0 5px 0;
+		margin: none;
+		color: #888;
+		font-weight: 600;
+		display: block;
+	}
+	.section1 .sectionTitleRule {
+		width: 100%;
+	}
+	.section1 .sectionTitleRule2 {
+		display: none;
+	}
+	.mainContent .section1 .section1Content {
+		display: block;
+		margin: 0% 0% 0% 5%;
+		font-family: sans-serif;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		line-height: 18px;
+	}
+	.mainContent .externalResource {
+		margin-top: 40px;
+		text-align: center;
+		padding-top: 0px;
+	}
+	.mainContent .externalResource .externalResourceLink {
+		width: 80%;
+		height: 35px;
+		margin-top: 0%;
+	}
 }
 
 /* Desktops and laptops  */
 @media only screen and (min-width:1025px) {
-header .profilePhoto {
-	float: left;
-	clear: both;
-	margin-right: 3%;
-	padding-top: 3%;
-}
-header .profilePhoto img {
-	border-radius: 50%;
-	width: 259px;
- 	height: 259px;
-	padding-top: 1%;
-}
-header .profileHeader {
-	text-align: left;
-	padding-top: 1%;
-}
-header .socialNetworkNavBar .socialNetworkNav {
-	width: 74px;
-	height: 74px;
-	display: inline-block;
-	margin-right: 23px;
-}
-/* Main content sections */
-.section1 .sectionTitleRule, .section2 .sectionTitleRule {
-	width: 22.5%;
-}
-.mainContent .section1 .section1Content {
-	display: block;
-	margin-top: 0%;
-	margin-right: 0%;
-	margin-left: 26%;
-	margin-bottom: 0%;
-	font-family: sans-serif;
-}
-.mainContent .section2 {
-	clear: both;
-}
-.section2 .section2Content {
-	padding: 0px;
-	margin-left: 26%;
-	font-family: sans-serif;
-}
-.mainContent .externalResourcesNav {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	text-align: center;
-	padding-top: 0px;
-	clear: both;
-}
-.mainContent .externalResourcesNav .externalResources {
-	width: 199px;
-	height: 48px;
-}
-
-footer .footerDisclaimer {
-	float: left;
-	margin-left: 3%;
-}
+	header .profilePhoto {
+		float: left;
+		clear: both;
+		margin-right: 3%;
+		padding-top: 3%;
+	}
+	header .profilePhoto img {
+		border-radius: 50%;
+		width: 259px;
+		height: 259px;
+		padding-top: 1%;
+	}
+	header .profileHeader {
+		text-align: left;
+		padding-top: 1%;
+	}
+	header .socialNav .socialNavIcon {
+		width: 74px;
+		height: 74px;
+		display: inline-block;
+		margin-right: 23px;
+	}
+	/* Main content sections */
+	.section1 .sectionTitleRule {
+		width: 22.5%;
+	}
+	.mainContent .section1 .section1Content {
+		display: block;
+		margin-top: 0%;
+		margin-right: 0%;
+		margin-left: 26%;
+		margin-bottom: 0%;
+		font-family: sans-serif;
+	}
+	.mainContent .externalResource {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		text-align: center;
+		padding-top: 0px;
+		clear: both;
+	}
+	.mainContent .externalResource .externalResourceLink {
+		width: 199px;
+		height: 48px;
+	}
 }

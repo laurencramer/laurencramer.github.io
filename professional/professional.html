@@ -3,17 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lauren Cramer</title>
-<link href="assets/styles/pageStyle.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap" rel="stylesheet">
+	<title>Lauren Cramer</title>
+	<link href="../assets/styles/pageStyle.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Heebo|Lato&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="js/openNav.js"></script>
 </head>
 
 <body>
-<div id="mainwrapper">
-  <header class="school-color"> 
-    <div id="logo"><a href="index.html"><strong>LAUREN CRAMER</strong></a></div>
-    <nav> <a href="#" title="Link">Professional Projects</a>|<a href="personal-projects.html" title="Link">Personal Projects</a>|<p class="currentLink">Coursework </p> </nav>
-  </header>
+	<div id="mainwrapper">
+		<header class="school-color"> 
+			<div id="logo"><a href="index.html">LAUREN CRAMER</a></div>
+				<!--Desktop Navigation-->
+				<nav id="mainNav">
+					<a href="#" title="Link">PROFESSIONAL</a>
+					<a href="school-projects.html" title="Link">PERSONAL</a>
+					<p class="currentLink">SCHOOL</p>
+				</nav>
+				<!--Mobile Navigation-->
+				<div id="mobileNav">
+					<div class="school-color header" onclick="openNav()">LAUREN CRAMER<img src="assets/images/menu.png" alt="menu bars" height="20px" style="float: right;"></div>
+					<div id="navLinks" class="personal-color">
+						<a href="index.html">HOME</a>
+						<a href="#">PROFESSIONAL</a>
+						<a href="personal-projects.html">PERSONAL</a>
+						<a href="#">SCHOOL</a>
+					</div>
+				</div>		
+		</header>
   <div id="content">
     <section id="mainContent">
 	<a href="index.html" title="Home"><img src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" alt="Back arrow" class="lightHover"></a>

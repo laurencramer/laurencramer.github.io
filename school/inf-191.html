@@ -3,23 +3,39 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lauren Cramer</title>
-<link href="../assets/styles/pageStyle.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap" rel="stylesheet">
+	<title>Lauren Cramer</title>
+	<link href="../assets/styles/pageStyle.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Heebo|Lato&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="../assets/js/openNav.js"></script>
 </head>
 
 <body>
 	<div id="mainwrapper">
 		<header class="school-color"> 
-			<div id="logo"><a href="../index.html"><strong>LAUREN CRAMER</strong></a></div>
-			<nav>
-				<a href="../professional-projects.html" title="Link">Professional Projects</a>|<a href="../personal-projects.html" title="Link">Personal Projects</a>|<p class="currentLink">Coursework</p>
-			</nav>
+			<div id="logo"><a href="../index.html">LAUREN CRAMER</a></div>
+				<!--Desktop Navigation-->
+				<nav id="mainNav">
+					<a href="#" title="Link">PROFESSIONAL</a>
+					<a href="../personal/personal.html" title="Link">PERSONAL</a>
+					<p class="currentLink">SCHOOL</p>
+				</nav>
+				<!--Mobile Navigation-->
+				<div id="mobileNav">
+					<div class="school-color header" onclick="openNav()">LAUREN CRAMER<img src="../assets/images/menu.png" alt="menu bars" height="20px" style="float: right;"></div>
+					<div id="navLinks" class="school-color">
+						<a href="../index.html">HOME</a>
+						<a href="#">PROFESSIONAL</a>
+						<a href="../personal/personal.html">PERSONAL</a>
+						<a href="school.html">SCHOOL</a>
+					</div>
+				</div>
 		</header>
 		<div id="content">
 			<section id="mainContent">
-				<a href="../school-projects.html" title="All coursework"><img src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" alt="Back arrow" class="lightHover"></a>
-				<h1>Senior Design Project (2019 - 20 weeks)</h1>
+				<div class="breadcrumb">
+					<p class="levelOne"><a href="school.html" title="School Projects">School</a> // </p>
+					<p class="levelTwo">senior design project (2019 - 20 weeks)</p>
+				</div>
 				<h3>About</h3>
 					<p>Our group created a project for <a href="https://nycoc.org/" class="schoolLink" title="Apples and Oranges" target="_blank">Apples and Oranges</a>, whose mission is to "'take the starving out of artist” by empowering storytellers to envision their work through the lens of a creative entrepreneur." We were tasked with creating a website for small theatre owners to simplify the process of acquiring rights to plays and shows, and providing a portal to access show resources. The website would also give smaller shows an opportunity to be seen and performed by theatres, big and small. This website was intended to solve current problems that smaller theatres have when acquiring show rights. Currently, the process is unfair, difficult, time-comsuming, and complicated. Our solution was to create TheatreNow, a simple and streamlined system, give smaller theatres access to large shows, and reduce or eliminate any upfront cost to the theatre required to perform a show.
 					</p>
@@ -36,21 +52,22 @@
 					<a href="https://azure.microsoft.com/en-us/" title="Microsoft Azure" target="_blank"><img src="../assets/images/azure.png" class="softwareLogo" alt="Azure logo" width="auto" height="40px"></a>
 					<a href="https://github.com/grapes-and-bananas/grapes-and-bananas" title="Github Repository" target="_blank"><img src="../assets/images/github.jpg" class="softwareLogo" alt="Azure logo" width="auto" height="40px"></a>
 				<h3>Final Website Prototype</h3>
-				<a href="../grapes-and-bananas/main/home.html" class="schoolLink" target="_blank" title="TheatreNow">Website Prototype ⭧</a>
+				<a href="theatrenow/index.html" class="schoolLink" target="_blank" title="TheatreNow Sign-in Page">Sign-in Page</a> | 
+				<a href="theatrenow/main/home.html" class="schoolLink" target="_blank" title="TheatreNow Homepage">Home</a>
 				<br><br>
-				<img src="../assets/191/home.png" alt="Homepage" style="border: 1px solid #777" class="scale">
-				<img src="../assets/191/emma.png" alt="Emma Show Page" class="scale" style="border: 1px solid #777" >
-				<img src="../assets/191/emma2.png" alt="Emma Show Page" class="scale" style="border: 1px solid #777">
-				<img src="../assets/191/streams.png" alt="Upload Streams Page" class="scale" style="border: 1px solid #777">
-				<img src="../assets/191/rev.png" alt="Revenue Page" class="scale" style="border: 1px solid #777">
+				<img src="assets/191/home.png" alt="Homepage" style="border: 1px solid #777" class="scale" width="49%">
+				<img src="assets/191/emma.png" alt="Emma Show Page" class="scale" style="border: 1px solid #777" width="49%">
+				<img src="assets/191/emma2.png" alt="Emma Show Page" class="scale" style="border: 1px solid #777" width="49%">
+				<img src="assets/191/streams.png" alt="Upload Streams Page" class="scale" style="border: 1px solid #777" width="49%">
+				<img src="assets/191/rev.png" alt="Revenue Page" class="scale" style="border: 1px solid #777" width="49%">
 				<h3>Documentation/Resources</h3>
 				<a href="https://github.com/grapes-and-bananas/grapes-and-bananas" class="schoolLink" title="Github" target="_blank">Github Repository  ⭧</a>
 			</section>
 		</div>
 	</div>
-<footer>
-  <hr>
-  <p class="footerDisclaimer">Copyright © Lauren Cramer. <span>All Rights Reserved</span></p>
-</footer>
+	<footer>
+		<hr>
+		<p><strong>Copyright © Lauren Cramer.</strong> <span>All Rights Reserved</span></p>
+	</footer>
 </body>
 </html>

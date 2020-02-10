@@ -1,10 +1,4 @@
 @charset "UTF-8";
-#mainwrapper header {
-	overflow: auto;
-	font-family: 'Rubik', sans-serif;
-	font-style: normal;
-	font-weight: 400;
-}
 .school-color {
 	background: #96CDFF!important;
 }
@@ -14,138 +8,170 @@
 .professional-color {
 	background: #B8E9DB!important;
 }
-
-#mainwrapper header #logo {
+body {
+	font-family: 'Lato', sans-serif;
+}
+/* Header */
+#mainwrapper header {
+	overflow: auto;
+	font-family: 'Heebo', sans-serif!important;
+	text-transform: lowercase;
+}
+#mainwrapper header #logo a {
 	width: 28%;
+	font-size: 1.2em;
+	font-weight: bold;
 	float: left;
 	padding-left: 2%;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	color: #111;
-}
-#mainwrapper header #logo a {
-	text-decoration: none;
-	color: #111;
+	text-decoration: none;	
 }
 #mainwrapper header #logo a:hover {
-	text-decoration: none;
 	color: #444;
+	text-decoration: none;
 }
 #mainwrapper header nav {
+	font-weight: normal;
 	text-align: right;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	padding-right: 2%;
-	width: 68%;
+	width: 65%;
 	float: left;
 	color: #111!important;
 }
-header nav a, .currentLink {
-	padding-right: 2%;
-	padding-left: 2%;
-}
-#content #mainContent p {
-	color: #222;
-	font-family: 'Karla', sans-serif;
-	font-style: normal;
-	font-weight: 200;
-	text-align: justify;
-}
-#content #mainContent h1, #content #mainContent h2, #content #mainContent h3 {
-	font-family: 'Rubik', sans-serif!important;
-	padding-top: 10px;
-	padding-bottom: 0px;
-}
-#content #mainContent h4 {
-	color: #666!important;
-}
-#mainContent {
-	padding-left: 2%;
-	font-family: 'Karla', sans-serif;
-	width: 71%;
-	float: left;
-	padding-right: 2%;
-	padding-top: 41px;
-}
-#mainwrapper {
-	width: 80%;
-	overflow: auto;
-	margin-left: 10%;
-}
-nav ul li {
-	list-style-type: none;
-	padding-top: 8px;
-	padding-bottom: 8px;
-}
-nav ul {
-	padding-left: 0%;
-}
-nav ul li a {
-	color: #111;
-	text-decoration: none;
+
+/* Nav */
+header nav a, header nav .currentLink {
+	padding: 0 2% 0 2%;
 }
 #mainwrapper header nav a {
-	color: #111;
+	color: #444;
 	text-decoration: none;
 }
 #mainwrapper header nav a:hover {
-	color: #444;
-	text-decoration: underline;
+	color: #000;
+	text-decoration: none;
 }
 #mainwrapper header nav .currentLink {
-	color: #111!important;
-	text-decoration: underline;
+	color: #000!important;
 	display: inline;
 }
 #mainwrapper header nav .currentLink:hover {
 	color: #444;
 	cursor: default;
 }
-footer {
-	padding-top: 30px;
+
+/* Main */
+#content #mainContent p {
+	color: #222;
+	text-align: justify;
 }
-footer .footerDisclaimer {
-	font-family: sans-serif;
-	font-size: 14px;
-	line-height: 18px;
-	color: rgba(104,103,103,1.00);
-	font-weight: 700;
+#content #mainContent h1, #content #mainContent h2, #content #mainContent h3 {
+	font-family: 'Lato', sans-serif;
+	text-transform: lowercase;
 }
-footer .footerDisclaimer span {
-	color: rgba(181,178,178,1.00);
-	font-weight: 400;
+#content #mainContent h1 {
+	color: black;
+	font-weight: 500;
+	font-size: 1.4em;
+	display: inline-block;
+	text-decoration: none;
 }
+#content #mainContent h2 {
+	color: #444;
+	font-size: 1.2em;
+}
+#content #mainContent h3 {
+	color: #333;
+	font-size: 1.2em;
+}
+#content #mainContent h4 {
+	color: #666!important;
+	font-size: 1.1em;
+}
+#mainContent {
+	padding-left: 2%;
+	font-family: 'Lato', sans-serif;
+	width: 80%;
+	float: left;
+	padding-right: 2%;
+	padding-top: 20px;
+}
+#mainwrapper {
+	width: 75%;
+	overflow: auto;
+	margin-left: 10%;
+}
+
+
+/* Breadcrumb */
+.breadcrumb {
+	text-transform: lowercase;
+}
+.breadcrumb .levelOne {
+	color: black;
+	font-weight: 500;
+	font-size: 1.4em;
+	display: inline-block;
+	text-decoration: none;
+}
+.breadcrumb .levelTwo {
+	color: #444!important;
+	font-weight: 600;
+	font-size: 1.3em;
+	display: inline-block;
+}
+.breadcrumb a, .breadcrumb a:hover {
+	text-decoration: none;
+}
+.breadcrumb a {
+	color: black;
+}
+.breadcrumb a:hover {
+	color: #444;
+}
+
+
+/* Animated Button */
 .btn-container {
 	width: 100px;
+	text-decoration: none!important;
 }
 .btn {
+	font-family: 'Lato', sans-serif;
 	margin: 10px auto;
 	border: none;
 	padding: 12px 22px;
 	font-size: 1em;
 	font-weight: 600;
 	position: relative;
-	color:#787878;
+	color: #787878;
 	mix-blend-mode: difference;
-	border-radius:50px;
+	border-radius: 50px;
 	width: 15%;
-	background: #E1CFFF;
 	transition: 0.3s;
-	outline:none;
+	outline: none;
+	text-decoration: none!important;
 }
 .btn:hover {
 	background: #D4BAFF;
 	width: 100%;
 	cursor: pointer;
 	color: white;
+	text-decoration: none!important;
 }
-.lightHover:hover {
-	opacity: 0.5;
+button .btn a, button .btn a:visited {
+	text-decoration: none!important;
 }
-.softwareLogo {
-	padding-right: 10px;
+.btn a {
+	text-decoration: none!important;
 }
 
+
+/* Links */
 .schoolLink {
 	color: #96CDFF;
 	font-weight: 600;
@@ -157,13 +183,12 @@ footer .footerDisclaimer span {
 .schoolLink:hover {
 	color: #59B0FF;
 }
-hr {
-	height: 1px;
-	background-color: #D3D3D3;
-	border: none;
-}
+
+
+/* Media */
 .scale {
-	height: 300px;
+	height: auto;
+	min-height: 300px;
 }
 .mockup {
 	float: left;
@@ -171,19 +196,6 @@ hr {
 	height: 500px;
 	width: auto;
 	padding-right: 20px;	
-	}
-.image-row {
-  display: flex;
-}
-.image-col {
-	float: left;
-	width: 33%;	
-	padding: 0 4px;
-}
-.image-row::after {
-	content: "";
-	clear: both;
-	display: table;
 }
 .dailyUI {
 	width: 100%;
@@ -197,6 +209,7 @@ hr {
 }
 
 
+/* Modal */
 .modal {
 	display: none;
 	position: fixed;
@@ -213,7 +226,6 @@ hr {
 	margin: 10vh auto;
 	padding: 20px;
 	width: 50%; 
-
 }
 .close {
 	color: #fff;
@@ -221,36 +233,110 @@ hr {
 	font-size: 35px;
 	font-weight: bold;
 }
-
 .close:hover, .close:focus {
 	color: #888;
 	cursor: pointer;
 	text-decoration: none;
 }
-
-
 button, button .modalImage {
-	border:none;
+	border: none;
+	width: 33%;
+	display: inline;
 	background-color: transparent;
+	text-decoration: none;
 }
-
 button:hover, button .modalImage:hover {
 	cursor: pointer;
 }
 
 
+/* Misc */
+hr {
+	height: 1px;
+	background-color: #D3D3D3;
+	border: none;
+}
+.softwareLogo {
+	padding: 5px;
+}
+#mobileNav {
+	display: none;
+}
 
+/* Footer */
+footer {
+	bottom: 0;
+	text-align: center;
+	width: 99%;
+	padding-top: 30px;
+}
+footer p {
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #555;
+}
 
+/* Laptops */
+@media only screen and (max-width:1024px) {
+	button, button .modalImage {
+		border: none;
+		width: 49%;
+		display: inline;
+		background-color: transparent;
+	}
+	.scale {
+		width: 80%;
+	}
+}
 
-
-@media screen and (max-width:769px) {
+/* Tablets*/
+@media screen and (max-width:900px) {
 	#mainContent {
-		padding-top: 0px;
+		padding-top: 40px;
 		float: none;
 		width: 96%;
 	}
 	#mainwrapper header {
-		width: 100%;
+		top: 0;
+		width: 78%;
+		z-index: 1;
+		overflow: hidden;
+		position: absolute;
+	}
+	header #logo {
+		display: none;
+	}
+	header #mainNav {
+		display: none;
+	}
+	header #mobileNav {
+		display: block;
+		overflow: hidden;
+		position: relative;
+		font-family: 'Rubik', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		color: black;
+	}
+	header #mobileNav #navLinks {
+		display: none;
+	}
+	header #mobileNav a:hover {
+		background-color: #ddd!important;
+	}
+	header #mobileNav a {
+		color: black;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: .9em;
+		display: block;
+	}
+	header #mobileNav .header {
+		padding: 14px 16px;
+		font-size: 1.1em;
+		font-weight: 600;
+		display: block;
 	}
 	.scale {
 		width: 100%;
@@ -259,14 +345,34 @@ button:hover, button .modalImage:hover {
 	.mockup {
 		height: 400px;
 		width: auto;
+		display: block;
+		margin: 0 auto;
+	}
+	.caption {
+		font-size: 1.8vw;
+		width: 100%;
+		line-height: 15px;
+	}
+	button, button .modalImage {
+		border: none;
+		width: 49%;
+		display: inline;
+		background-color: transparent;
 	}
 	.modal-content {
 		margin: 10vh auto; 
 		padding: 20px;
 		width: 90%; 
-}
-}
+	}
+	.breadcrumb {
+		width: 100%;
+		font-size: 1.8vw;
+	}
 	
+}
+
+
+/* Phones */
 @media screen and (max-width:480px) {
 	#mainwrapper header #logo {
 		width: 96%;
@@ -295,9 +401,23 @@ button:hover, button .modalImage:hover {
 		height: auto;
 		padding-bottom: 10px;
 	}
+	.caption {
+		width: 100%;
+		font-size: 14px;
+	}
 	.modal-content {
 		margin: 10vh auto; 
 		padding: 20px;
 		width: 90%; 
-}
+	}
+	.breadcrumb {
+		width: 100%;
+		font-size: 4vw;
+	}
+	button, button .modalImage {
+		border: none;
+		width: 100%;
+		display: inline;
+		background-color: transparent;
+	}
 }
