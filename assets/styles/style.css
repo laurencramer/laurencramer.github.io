@@ -49,7 +49,7 @@ hr {
 /* Social Links */
 header .socialNav {
 	text-align: center;
-	display: block;
+	display: inline;
 	margin-top: 60px;
 	clear: both;
 }
@@ -234,7 +234,7 @@ footer p {
 	header .socialNav .socialNavIcon {
 		width: 60px;
 		height: 60px;
-		display: inline-block;
+		display: inline;
 		margin-right: 23px;
 	}
 
