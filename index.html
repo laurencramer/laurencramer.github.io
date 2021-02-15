@@ -1,195 +1,252 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lauren Cramer</title>
-	<link href="assets/styles/style.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Heebo|Lato&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="js/openNav.js"></script>
-	<script>
-	function alertFunction() {
-  		alert("In Progress. Coming soon!");
-		}
-	function emptyFunction() {
-  		alert("Nothing to see here :(");
-		}
-	</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Lauren Cramer</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.css" rel="stylesheet">
+
 </head>
 
-<body>
-	<header>
-		<div class="profilePhoto"> 
-			<img src="assets/images/the-bees.jpg" alt="Profile picture">
-		</div>
-		<section class="profileHeader">
-			<h1>LAUREN CRAMER</h1>
-			<h3>UI Designer • UX Researcher • Cat Lover • Bee Devotee</h3>
-			<hr>
-			<p>My name is Lauren, but almost everyone I know calls me Larn. I'm from Playa del Rey, California, where I currently reside. I moved back after recently graduating from the University of California, Irvine with a B.S. in Informatics with a specialization in Human-Computer Interaction. I enjoy user interface design, user experience research, and front-end development.
-			<br>
-			Some of my hobbies include figure skating, video games, cosplaying, and hanging out with my two cats.
-			<br>
-			In the future, I hope to pursue a Master's or Ph.D. in Data Science or Human-Computer Interaction.</p>
-		</section>
-		<div class="socialNav">
-			<div class="socialNavIcon"> 
-			  <a href="https://www.facebook.com/avvyface" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" alt="Facebook"></a> </div>
-			<div class="socialNavIcon"> 
-			  <a href="https://github.com/laurencramer" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/github.png" alt="Github"></a> </div>
-			<div class="socialNavIcon"> 
-			 <a href="https://www.linkedin.com/in/lrcramer/" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" alt="Linkedin"></a> </div>
-			<div class="socialNavIcon"> 
-			  <a href="mailto:lcramer@uci.edu" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/gmail.png" alt="Linkedin"></a></div>
-		</aside>
-	</header>
-	
-	<section class="mainContent">
-		<!---Contact--->
-		<section class="section1">
-			<h2 class="sectionTitle">Contact</h2>
-			<hr class="sectionTitleRule">
-			<hr class="sectionTitleRule2">
-			<div class="section1Content">
-				<p><span>Email :</span> lcramer@uci.edu</p>
-				<p><span>Website :</span> laurenrenee.me</p>
-				<p><span>Phone :</span> 310.413.4509</p>
-				<p><span>Location :</span> Los Angeles, CA</p>
-			</div>
-		</section>
-		<!---Portfolio--->
-		<section class="section1">
-			<h2 class="sectionTitle">Portfolio</h2>
-			<hr class="sectionTitleRule">
-			<hr class="sectionTitleRule2">
-			<div class="section1Content">
-				<a href="school/school.html"><div class="btn-container"><button class="btn btn-school">Classwork<font color="white" style="padding-left: 10px;" >⇢</font></button></div></a>
-				<a href="personal/personal.html"><div class="btn-container"><button class="btn btn-personal">Personal<font color="white" style="padding-left: 10px;" >⇢</font></button></div></a>
-				<div class="btn-container"><button class="btn-na" onclick="emptyFunction()">Professional<font color="white" style="padding-left: 10px;" >⇢</font></button></div>
-			</div>
-		</section>
-		<!---Education--->
-		<section class="section1">
-			<h2 class="sectionTitle">Education</h2>
-			<hr class="sectionTitleRule">
-			<hr class="sectionTitleRule2">
-			<div class="section1Content">
-				<div class="jobTitle">University of California, Irvine </div>
-				<div class="sectionContentSubTitle">Sept 2013 - June 2019 / Irvine, CA</div>
-				<p class="sectionContent"> 
-					» <strong>Bachelor of Science in Informatics</strong>
-					<br>
-					» Specialization in Human-Computer Interaction
-				</p>
-			</div>
-		</section>
-		<!---Job Experience--->
-		<section class="section1">
-			<h2 class="sectionTitle"> Job Experience</h2>
-			<hr class="sectionTitleRule">
-			<hr class="sectionTitleRule2">
-			<div class="section1Content">
-				<div class="jobTitle">Field Support Technician </div><p class="divider"> // </p> <div class="companyName"> Robert Half</div>
-				<div class="sectionContentSubTitle">Feb 2020 - Mar 2019 / Los Angeles, CA</div>
-				<p class="sectionContent"> 
-					» Set up recently developed voting devices for the Los Angeles County primary election.<br>	
-					» Followed strict technical and legal protocol mandated by the manufacturer and county.<br>	
-					» Provided on-call technical support for voting devices and iPads during the election.<br>	
-					» Broke down and properly stored all devices post-election.
+<body id="page-top">
 
-				</p>
-				<hr style="border: 1px solid rgba(247,247,247,0.74)">
-			</div>
-			<div class="section1Content">
-				<div class="jobTitle">Operations Manager </div><p class="divider"> // </p> <div class="companyName"> Eskape Rooms OC</div>
-				<div class="sectionContentSubTitle">Feb 2019 - Aug 2019 / Irvine, CA</div>
-				<p class="sectionContent"> 
-					» Setup business and revenue software, including Quickbooks, customer
-						appointment-booking services, and employee scheduling software.<br>	
-					» Hired entire staff and created employee work schedules.<br>
-					» Tracked company finances, revenue, expenses, and employee wages.<br>
-					» Resolved technical issues with office electronics and escape room tech.
-				</p>
-				<hr style="border: 1px solid rgba(247,247,247,0.74)">
-			</div>
-			<div class="section1Content">
-				<div class="jobTitle">IT Manager</div><p class="divider"> // </p> <div class="companyName">Savage Enterprises</div>
-				<div class="sectionContentSubTitle">Sept 2018 - Feb 2018 / Irvine, CA</div>
-				<p class="sectionContent">
-					» Assessed and integrated new software and services, such as Slack, time-
-					  tracking software, and Netsuite, depending on the needs of the
-					  company or needs of specific departments.<br>
-					» Troubleshooted networking equipment, Excel scripts, user systems, 
-					  and business devices, such as Polycom phones and Zebra printers.<br>
-					» Evaluated processes and procedures of tech support staff.<br>
-					» Assessed workflows of other departments to help maximize efficiency
-					  of current software use.<br>
-					» Recommended new software and systems to multiple departments based
-					  on workflow observations.<br>
-					» Prepared and evalutated workflow solutions.<br>
-					» Created manuals for multiple departments for current software, new 
-					  software, and procedures.<br>
-					» Created user tests to determine which software or procedures would
-					  be most valuable for a given department. 		
-				</p>
-				<hr style="border: 1px solid rgba(247,247,247,0.74)">
-			</div>
-			<div class="section1Content">
-				<div class="jobTitle">Systems Analyst</div><p class="divider"> // </p> <div class="companyName">Savage Enterprises</div>
-				<div class="sectionContentSubTitle">June 2018 - Sept 2018 / Irvine, CA</div>
-				<p class="sectionContent">
-					» Troubleshooted  user systems, and business devices, such as
-					  Polycom phones and Zebra printers.<br>
-					» Maintained and updated company tools, such as sales spreadsheets,
-					  Excel order form and sales commission scripts, CRMs, ERPs, and 
-					  ecommerce software, like Shopify.<br>
-					» Created manuals for multiple departments for current software, new 
-					  software, and procedures.	
-				</p>
-				<hr style="border: 1px solid rgba(247,247,247,0.74)">
-			</div>
-			<div class="section1Content">
-				<div class="jobTitle">Manager</div><p class="divider"> // </p> <div class="companyName">Eskape Rooms Irvine</div>
-				<div class="sectionContentSubTitle">Feb 2017 - Feb 2018 / Irvine, CA</div>
-				<p class="sectionContent">
-					» Interviewed and hired employees and created employee schedules.<br>
-					» Tracked company finances, revenue, and employee wages.<br>
-					» Resolved technical issues with office electronics and escape room tech.
-				</p>
-				<hr style="border: 1px solid rgba(247,247,247,0.74)">
-			</div>
-			<div class="section1Content">
-				<div class="jobTitle">Game Master</div><p class="divider"> // </p> <div class="companyName">Eskape Rooms</div>
-				<div class="sectionContentSubTitle">August 2016 - Feb 2017 / Irvine, CA</div>
-				<p class="sectionContent">
-					» Assisted customers in-person and over the phone regarding scheduling, 
-					  cancellations, refunds, and general inquiries.<br>
-					» Handled and resolved customer complaints.
-				</p>
-				<hr style="border: 1px solid rgba(247,247,247,0.74)">
-			</div>
-			<div class="section1Content">
-				<div class="jobTitle">Tech Support Contractor</div><p class="divider"> // </p> <div class="companyName">HelloTech</div>
-				<div class="sectionContentSubTitle">Aug 2014 - Jan 2020 / Southern California</div>
-				<p class="sectionContent">
-					» Traveled to customers’ homes to provide technical support for personal 
-					  devices.<br>
-					» Resolved various technical issues, such as issues with network connectivity
-					  and slow or unusable devices.<br>
-					» Setup new devices, including smartphones, laptops, desktops, printers, 
-					  routers, modems, and Apple TVs.<br>
-					» Explained to customers how I resolved the issue, how to troubleshoot it
-					  if the issue happens again, and how to prevent the issue in the future.
-				</p>
-			</div>
-		</section>
-		<div class="externalResource">
-			<div class="externalResourceLink"> <a href="assets/LaurenCramer-Resume.pdf" target="_blank" title="Download CV Link">DOWNLOAD RESUME</a> </div>
-		</div>
-	</section>
-	
-	<footer>
-		<hr><p><strong>Copyright © Lauren Cramer.</strong> <span>All Rights Reserved</span></p>
-	</footer>
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Lauren Cramer</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#services">Services</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">lauren cramer</h1>
+      <h3 class="mb-4">
+        <em>ui designer - ux researcher - web designer</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">let's get started!</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- About -->
+  <section class="content-section bg-primary text-white text-center" id="about">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">who am i?</h3>
+        <h2 class="mb-5">about me</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-map-marker-alt"></i>
+          </span>
+          <h4>
+            <strong>houston</strong>
+          </h4>
+          <p class="text-faded mb-0">I am from Playa del Rey, CA and currently live in Houston, TX. I plan to move back to
+            Los Angeles within the next few years.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-graduation-cap"></i>
+          </span>
+          <h4>
+            <strong>uc irvine</strong>
+          </h4>
+          <p class="text-faded mb-0">I graduated from the University of California, Irvine with a B.S. in Informatics with
+            a specialization in Human-Computer Interaction.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-palette"></i>
+          </span>
+          <h4>
+            <strong>hobbies</strong>
+          </h4>
+          <p class="text-faded mb-0">I enjoy drawing, baking, figure skating, and playing video games (currently World of Warcraft and 
+            League of Legends).
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fab fa-forumbee"></i>
+          </span>
+          <h4>
+            <strong>bees?</strong>
+          </h4>
+          <p class="text-faded mb-0">I am a big advocate for saving the bees and spreading information wherever I can, as seen 
+           <!-- Button trigger modal -->
+          <b class="bee-modal" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
+            here.
+          </b>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/the-bees.jpg" width="100%">
+                </div>
+              </div>
+            </div>
+          </div>
+            Learn more <a href="https://thebeeconservancy.org/why-bees/" target="_blank">here</a>, 
+            <a href="https://www.heifer.org/bees/index.html" target="_blank" >here</a>, 
+            or <a href="https://www.greenpeace.org/usa/sustainable-agriculture/save-the-bees/" target="_blank">here</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfolio</h3>
+        <h2 class="mb-5">Recent Projects</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Stationary</div>
+                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Ice Cream</div>
+                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Strawberries</div>
+                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Workspace</div>
+                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="content-section bg-primary text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+      <a href="#!" class="btn btn-xl btn-light mr-4">Click Me!</a>
+      <a href="#!" class="btn btn-xl btn-dark">Look at Me!</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#!">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#!">
+            <i class="icon-social-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="#!">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Lauren Cramer 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+  <script src="js/style.js"></script>
+
 </body>
+
 </html>
