@@ -382,3 +382,8 @@ a:hover, a:focus, a:active {
 .mb-4 {
   color: #BBACB9!important;
 }
+
+.daily {
+	max-width: 500px!important;
+	padding-bottom: 15px
+}
