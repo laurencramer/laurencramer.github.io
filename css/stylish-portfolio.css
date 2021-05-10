@@ -123,7 +123,7 @@ h6 {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
+  background: #C7C7C7;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -324,12 +324,12 @@ footer.footer .social-link:hover {
 }
 
 a {
-  color: #AEC3A3 !important;
+  color: #48346b !important;
   font-weight: bold;
 }
 
 a:hover, a:focus, a:active {
-  color:#c27b8b;
+  color:#253F92;
 }
 
 .btn-primary {
@@ -386,4 +386,9 @@ a:hover, a:focus, a:active {
 .daily {
 	max-width: 500px!important;
 	padding-bottom: 15px;
+}
+
+.card {
+	padding: 10px;
+	margin: 5px;
 }
