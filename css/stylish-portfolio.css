@@ -392,3 +392,12 @@ a:hover, a:focus, a:active {
 	padding: 10px;
 	margin: 5px;
 }
+
+.nav-projects {
+	font-size: 1.5em;
+	background-color: #F3F3F3;
+	padding-left: 10px;
+}
+.nav-projects .active {
+	background-color: lightgrey;
+}
