@@ -7,12 +7,12 @@ body {
 }
 
 a {
-  color: #0563bb;
+  color: #3D61E6;
   text-decoration: none;
 }
 
 a:hover {
-  color: #067ded;
+  color: #0B30B5;
   text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #FAACB7;
+  background: #8A5FEC;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -49,7 +49,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #F68794;
+  background: #6F3BE6;
   color: #fff;
 }
 
@@ -133,7 +133,7 @@ h6 {
 @media (max-width: 991px) {
   #header {
     width: 300px;
-    background: #FDCFD4;
+    background: #6F3BE6;
     border-right: 1px solid #e6e9ec;
     left: -300px;
   }
@@ -171,13 +171,13 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #45505b;
+  color: #fff;
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #FFF5EE;
+  background: #A98AF2;
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -214,7 +214,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   color: #fff;
-  background: #F68794;
+  background: #6F3BE6;
 }
 
 .nav-menu a:hover span,
@@ -268,7 +268,7 @@ h6 {
 
 .mobile-nav-active .mobile-nav-toggle {
   color: #fff;
-  background-color: #F68794;
+  background-color: #6F3BE6;
 }
 
 /*--------------------------------------------------------------
@@ -314,7 +314,7 @@ h6 {
 }
 
 #hero p span {
-  color: #F68794;
+  color: #6F3BE6;
   letter-spacing: 1px;
 }
 
@@ -393,7 +393,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #F68794;
+  background: #6F3BE6;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -408,7 +408,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #FAACB7;
+  color: #6F3BE6;
 }
 
 .about .content ul {
@@ -430,7 +430,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #FDCFD4;
+  color: #A98AF2;
   line-height: 0;
 }
 
@@ -530,7 +530,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #FDCFD4;
+  border-left: 2px solid #A98AF2;
   position: relative;
 }
 
@@ -540,7 +540,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #F68794;
+  color: #6F3BE6;
   margin-bottom: 10px;
 }
 
@@ -574,7 +574,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #FDCFD4;
+  border: 2px solid #A98AF2;
 }
 
 /*--------------------------------------------------------------
@@ -609,7 +609,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #F68794;
+  color: #6F3BE6;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1167,8 +1167,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #FFF5EE;
-  color: #45505b;
+  background: #A98AF2;
+  color: #fff;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1197,7 +1197,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #F68794;
+  background: #6F3BE6;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
