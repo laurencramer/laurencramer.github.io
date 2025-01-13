@@ -22,7 +22,6 @@
 }
 
 
-
 /*__________________________Body Styling__*/
 body {
     font-family: "Open Sans", sans-serif;
@@ -30,19 +29,20 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scrolling if needed */
+    background-color: var(--primary-color-light);
 }
 
-/*__________________________Header Styling__*/
 
+/*__________________________Content Styling__*/
 .gradient-background {
     height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
     background: linear-gradient(to right, var(--primary-color-dark), var(--primary-color-light)); /* Gradient colors */
     position: relative;
-    width: 100vw; /* Full width of the viewport */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
@@ -52,6 +52,34 @@ body {
     position: relative;
 }
 
+.content {
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    color: white;
+    align-items: center; /* Center content horizontally */
+    background-color: var(--primary-color-light);
+}
+
+.content p {
+    display: block;
+    text-align: justified;
+}
+
+.about {
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 50%;
+    
+}
+
+.about-imgs {
+    padding: 20px 0px 40px 0px;
+}
+
+/*__________________________Image Styling__*/
 .profile-photo-container {
     position: relative;
     width: 550px; /* Adjust size as needed */
@@ -83,6 +111,12 @@ body {
 
 .profile-photo-container:hover .profile-photo.default {
     opacity: 1;
+}
+
+.about img {
+    width: 24%;
+    height: auto;
+    justify-content: space-between;
 }
 
 
@@ -128,54 +162,111 @@ h2 {
 
 /* Navigation Links Styling */
 .nav-links {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Aligns the navigation links horizontally */
+    justify-content: center; /* Centers the navigation links */
     align-items: center;
     margin: 0;
     padding: 0;
 }
 
 .nav-links ul {
-    list-style: none;
+    list-style: none; 
     padding: 0;
     margin: 0;
-    display: flex;
-    align-items: center;
+    display: flex; /* Aligns the navigation links horizontally */
+    align-items: center; /* Centers the navigation links */
 }
 
 .nav-links li {
     display: inline;
     position: relative;
-
 }
 
 .nav-links li:not(:last-child)::after {
     content: '|'; /* Separator character */
-    color: white; /* Color for the separator */
-    margin: 0 10px; /* Space around the separator */
+    color: white;
+    margin: 0 10px;
 }
 
 .nav-links a {
-    color: var(--tertiary-color-light); /* Use lighter tertiary color for text */
-    font-family: "Tiny5", sans-serif;
+    color: var(--tertiary-color-light);
+    font-family: "Tiny5", sans-serif; 
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 1.4rem; /* Adjust font size as needed */
-    padding: 10px 15px; /* Padding for better click area */
-    border-radius: 5px; /* Slightly rounded corners */
-    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transitions */
+    font-size: 1.4rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-    background-color: var(--tertiary-color-medium-light); /* Background color on hover/focus */
-    color: white; /* Text color on hover/focus */
-    transform: translateY(-2px); /* Subtle lift effect */
+    background-color: var(--tertiary-color-medium-light);
+    color: white;
+    transform: translateY(-2px); /* Subtle lift-up effect */
 }
 
 .nav-links a:active {
     transform: translateY(1px); /* Subtle push-down effect */
+}
+
+.mobile-hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+}
+
+.mobile-hamburger-menu .mobile-bar {
+    width: 20px;
+    height: 4px;
+    background-color: white;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+
+/* Mobile Side Navbar Styling */
+.mobile-nav-links {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden off-screen */
+    height: 100%;
+    width: 250px;
+    background-color: var(--primary-color-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.mobile-nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.mobile-nav-links a {
+    display: block;
+    font-family: "Tiny5", sans-serif; 
+    text-transform: uppercase;
+    padding: 15px;
+    color: var(--tertiary-color-light);
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.mobile-nav-links a:hover {
+    background-color: var(--primary-color-medium-light);
 }
 
 
@@ -188,4 +279,39 @@ h2 {
     h2 {
         font-size: 1.25rem;
     }
+    .about img {
+        width: 45%;
+    }
+    .about {
+        width: 80%;
+    }
+    .mobile-hamburger-menu {
+        display: flex;
+    }
+
+    .mobile-nav-links.active {
+        left: 0; /* Slide in from the left */
+    }
+
+    /* Hide the nav links */
+    .nav-links {
+        display: none;
+    }
+}
+    
+@media (min-width: 768px) and (max-width: 1096px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+    .about img {
+        width: 24%;
+    }
+    .about {
+        width: 80%;
+    }
+    
 }
