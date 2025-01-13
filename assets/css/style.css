@@ -70,19 +70,19 @@ body {
 }
 
 .profile-photo.default {
-    opacity: 1;
+    opacity: 0;
 }
 
 .profile-photo.hover {
-    opacity: 0;
-}
-
-.profile-photo-container:hover .profile-photo.hover {
     opacity: 1;
 }
 
-.profile-photo-container:hover .profile-photo.default {
+.profile-photo-container:hover .profile-photo.hover {
     opacity: 0;
+}
+
+.profile-photo-container:hover .profile-photo.default {
+    opacity: 1;
 }
 
 
