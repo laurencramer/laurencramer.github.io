@@ -770,7 +770,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #A98AF2;
+  background: var(--primary-dark);
   color: #fff;
   font-size: 14px;
   text-align: center;
@@ -800,7 +800,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #6F3BE6;
+  background: var(--secondary-dark);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
