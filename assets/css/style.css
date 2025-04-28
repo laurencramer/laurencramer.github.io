@@ -700,11 +700,18 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding: 2px 10px 10px 10px;
+}
+.portfolio-details h1 {
+  color: var(--secondary-dark);
+}
+
+.portfolio-details h2 {
+  color: var(--secondary);
 }
 
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  width: 90%;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
